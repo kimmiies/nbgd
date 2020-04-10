@@ -1,0 +1,564 @@
+{
+  "current": {
+    "color_header_bg": "#ddede5",
+    "color_header_links": "#252525",
+    "color_body_bg": "#faf8ef",
+    "color_content_bg": "rgba(0,0,0,0)",
+    "color_body_headings": "#2b6869",
+    "color_body_text": "#252525",
+    "color_button_bg": "#2b6869",
+    "color_button_text": "#fff",
+    "color_footer_bg": "#ccac5f",
+    "color_footer_text": "#252525",
+    "color_hero_text": "#2b6869",
+    "color_hero_bg": "#faf8ef",
+    "type_accent_family": "montserrat_n7",
+    "type_accent_spacing": false,
+    "type_accent_transform": false,
+    "type_base_family": "montserrat_n4",
+    "type_base_size": "17px",
+    "type_nav_size": "15px",
+    "type_nav_spacing": false,
+    "type_nav_transform": false,
+    "product_images_padding": false,
+    "product_vendor_enable": false,
+    "share_image": "shopify:\/\/shop_images\/nbgd_Share.jpg",
+    "social_facebook_link": "",
+    "social_twitter_link": "",
+    "social_pinterest_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/theneighbourgood\/",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "favicon": "shopify:\/\/shop_images\/nbgd_fav2_8d9b9df5-4aef-4b73-a487-3bf9b40aef05.png",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#006eff",
+    "checkout_button_color": "#006eff",
+    "checkout_error_color": "#e32c2b",
+    "checkout_banner_background_color": "#fff",
+    "checkout_call_to_action_color": "#006eff",
+    "checkout_use_header_image": false,
+    "color_newsletter_input": "#1a1a1a",
+    "sections": {
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "1584683668199": {
+            "type": "menu",
+            "settings": {
+              "link_list": "main-menu"
+            }
+          },
+          "1585979626408": {
+            "type": "social",
+            "settings": {
+              "title": "get @ us",
+              "align": "left"
+            }
+          },
+          "linklist": {
+            "type": "menu",
+            "settings": {
+              "link_list": "footer"
+            }
+          }
+        },
+        "block_order": [
+          "1584683668199",
+          "1585979626408",
+          "linklist"
+        ],
+        "settings": {
+          "show_payment_icons": true
+        }
+      },
+      "featured-collections": {
+        "type": "featured-collections",
+        "disabled": true,
+        "blocks": {
+          "featured-collections-0": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "featured-collections-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "cafes"
+            }
+          },
+          "featured-collections-2": {
+            "type": "collection",
+            "settings": {
+              "collection": "shops"
+            }
+          },
+          "1584649967246": {
+            "type": "collection",
+            "settings": {
+              "collection": "health-wellness"
+            }
+          },
+          "1584591147774": {
+            "type": "collection",
+            "settings": {
+              "collection": "services"
+            }
+          }
+        },
+        "block_order": [
+          "featured-collections-0",
+          "featured-collections-1",
+          "featured-collections-2",
+          "1584649967246",
+          "1584591147774"
+        ],
+        "settings": {
+          "stretch_collection_image": false
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/Neighbourgood_logo.png",
+          "logo_max_width": "450",
+          "main_linklist": "main-menu",
+          "promo_bar_enable": false,
+          "promo_bar_text": "",
+          "promo_bar_link": ""
+        }
+      },
+      "featured-products-subsection": {
+        "type": "featured-products-subsection",
+        "settings": {
+          "collection": ""
+        }
+      },
+      "collection-filters": {
+        "type": "collection-filters",
+        "settings": {
+          "product_tags_enable": true,
+          "product_sorting_enable": true
+        }
+      },
+      "1584676389554": {
+        "type": "featured-content",
+        "settings": {
+          "title": "cafés & bars",
+          "subtext": "view all",
+          "link": "shopify:\/\/collections\/cafes",
+          "image": "shopify:\/\/shop_images\/Cafe.jpg",
+          "image_align": "center center"
+        }
+      },
+      "1584676573111": {
+        "type": "featured-content",
+        "settings": {
+          "title": "restaurants",
+          "subtext": "view all",
+          "link": "shopify:\/\/collections\/frontpage",
+          "image": "shopify:\/\/shop_images\/Restos2.jpg",
+          "image_align": "center center"
+        }
+      },
+      "1584683170432": {
+        "type": "featured-content",
+        "settings": {
+          "title": "shops",
+          "subtext": "view all",
+          "link": "shopify:\/\/collections\/shops",
+          "image": "shopify:\/\/shop_images\/Shops_85892104-f052-4463-b0dc-c26bdaaa71ee.jpg",
+          "image_align": "center center"
+        }
+      },
+      "1584683343874": {
+        "type": "featured-content",
+        "settings": {
+          "title": "services",
+          "subtext": "view all",
+          "link": "shopify:\/\/collections\/services",
+          "image": "shopify:\/\/shop_images\/Barber5.jpg",
+          "image_align": "top center"
+        }
+      },
+      "1584683390355": {
+        "type": "featured-content",
+        "settings": {
+          "title": "health & wellness",
+          "subtext": "view all",
+          "link": "shopify:\/\/collections\/health-wellness",
+          "image": "shopify:\/\/shop_images\/Fitness2.jpg",
+          "image_align": "center center"
+        }
+      },
+      "1584734418738": {
+        "type": "advanced-content",
+        "blocks": {
+          "1584734418738-0": {
+            "type": "html",
+            "settings": {
+              "code": "",
+              "width": "100%",
+              "alignment": "top-middle"
+            }
+          }
+        },
+        "block_order": [
+          "1584734418738-0"
+        ],
+        "settings": {}
+      },
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "settings": {
+          "message": true,
+          "home_page_only": false,
+          "header_padding": 39,
+          "message_text": "we just launched! please help spread the word.",
+          "free_shipping_countdown": false,
+          "free_shipping_threshold": 25,
+          "free_shipping_notqualified": "Add just [price] to your cart to receive free shipping!",
+          "free_shipping_qualified": "Your order qualifies for free shipping!",
+          "message_link": "",
+          "color_bg": "#920d46",
+          "color_text": "#ffffff",
+          "color_text_hover": "#eeeeee",
+          "font_size": 14
+        }
+      },
+      "1584592441036": {
+        "type": "advanced-content",
+        "blocks": {
+          "1584592441036-0": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"kim-header\">\n<h1 style=\"text-align:left; class=\" small--text-center=\"\">hi toronto.<\/h1>\n\n<div style=\"margin: -60px\"><\/div>\n\n<div style=\"text-align:left;display:none;\">\n\n<b>buy gift cards now, for later.<\/b>\n\n<br>\n\nSupport your fave local businesses today with gift cards you can redeem later, during more social times.\n\n<\/div>\n<\/div>",
+              "width": "100%",
+              "alignment": "top-middle"
+            }
+          }
+        },
+        "block_order": [
+          "1584592441036-0"
+        ],
+        "settings": {}
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "enable_ajax": true,
+          "stock_enable": false,
+          "enable_payment_button": true,
+          "social_sharing_products": true
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "You may also like"
+        }
+      },
+      "1585180349867": {
+        "type": "image-content",
+        "blocks": {
+          "1585180349867-1": {
+            "type": "text_block",
+            "settings": {
+              "title": "buy gift cards now, for later.",
+              "text": "<p>support your fave local businesses today with gift cards you can redeem later, during more social times.<\/p>",
+              "align": "left"
+            }
+          },
+          "1585180615747": {
+            "type": "image_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/homeheader_2x_720x_1eaf8c2a-037a-4d9c-a878-99296767c468.png"
+            }
+          }
+        },
+        "block_order": [
+          "1585180349867-1",
+          "1585180615747"
+        ],
+        "settings": {}
+      },
+      "image-content-info2": {
+        "type": "image-content-info2",
+        "blocks": {
+          "1585497189649": {
+            "type": "imageTextInfo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/mobilephone.png",
+              "title": "get your gift card now",
+              "text": "<p>Purchase an e-gift card and you'll instantly receive&nbsp;it in your email<\/p>"
+            }
+          },
+          "1585497258175": {
+            "type": "imageTextInfo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/pizzaslice.png",
+              "title": "redeem it later",
+              "text": "<p>Pull up the card on your phone when you pay<\/p>"
+            }
+          },
+          "1585505012334": {
+            "type": "imageTextInfo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/stackcoins.png",
+              "title": "support your neighbours",
+              "text": "<p>Don&rsquo;t forget to tip on the full amount of your purchase (and tip generously!)<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1585497189649",
+          "1585497258175",
+          "1585505012334"
+        ],
+        "settings": {
+          "commentText": "The purchase, use, or acceptance of this e-gift card constitutes acceptance of our",
+          "url": "shopify:\/\/pages\/terms-conditions",
+          "linkText": "terms and conditions."
+        }
+      },
+      "image-content-info-list": {
+        "type": "image-content-info-list",
+        "blocks": {
+          "1585505847124": {
+            "type": "imageTextInfo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/paperplane.png",
+              "title": "sign-up & payment",
+              "listitem1": "<p>1.&nbsp; Fill&nbsp;out the quick&nbsp;form so we can get to know you<\/p>",
+              "listitem2": "<p>2.&nbsp; We'll help get your Gift Up! account started and send you instructions on connecting it to your&nbsp;bank account<\/p>",
+              "listitem3": "<p>3.&nbsp; That's it! Payment will go directly to you. You&rsquo;ll receive all the proceeds minus the small credit card processing fee, which we can't avoid (2.90% + $0.30 per transaction)<\/p>"
+            }
+          },
+          "1585505893151": {
+            "type": "imageTextInfo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/storefront.png",
+              "title": "redemption & tracking",
+              "listitem1": "<p>1. When your doors open again, customers will show&nbsp;their e-gift card at purchase<\/p>",
+              "listitem2": "<p>2. Use the free Gift Up! app to scan their code. It also helps you keep track of remaining balances<\/p>",
+              "listitem3": ""
+            }
+          }
+        },
+        "block_order": [
+          "1585505847124",
+          "1585505893151"
+        ],
+        "settings": {
+          "commentText": "If you have any other suggestions on how we can help, please don’t hesitate to",
+          "url": "shopify:\/\/pages\/reach-out",
+          "linkText": "let us know."
+        }
+      }
+    },
+    "content_for_index": [
+      "1584592441036",
+      "1585180349867",
+      "1584676573111",
+      "1584676389554",
+      "1584683343874",
+      "1584683170432",
+      "1584683390355",
+      "1584734418738",
+      "featured-collections"
+    ]
+  },
+  "presets": {
+    "Snowboards": {
+      "checkout_accent_color": "#006eff",
+      "checkout_banner_background_color": "#fff",
+      "checkout_button_color": "#006eff",
+      "checkout_call_to_action_color": "#006eff",
+      "checkout_use_header_image": false,
+      "color_body_bg": "#f7f7f7",
+      "color_body_headings": "#030303",
+      "color_body_text": "#666",
+      "color_button_bg": "#006eff",
+      "color_button_text": "#fff",
+      "color_content_bg": "#fff",
+      "color_footer_bg": "#030303",
+      "color_footer_text": "#fff",
+      "color_header_bg": "#030303",
+      "color_header_links": "#fff",
+      "color_hero_bg": "#006eff",
+      "color_hero_text": "#fff",
+      "color_newsletter_input": "#1a1a1a",
+      "type_accent_family": "unica_one_n4",
+      "type_accent_spacing": true,
+      "type_accent_transform": true,
+      "type_base_family": "karla_n4",
+      "type_base_size": "16px",
+      "type_nav_size": "14px",
+      "type_nav_spacing": true,
+      "type_nav_transform": true,
+      "sections": {
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "placeholder-0": {
+              "type": "slide",
+              "settings": {}
+            },
+            "placeholder-1": {
+              "type": "slide",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "placeholder-0",
+            "placeholder-1"
+          ],
+          "settings": {}
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "linklist": {
+              "type": "menu",
+              "settings": {}
+            },
+            "social": {
+              "type": "social",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "linklist",
+            "social"
+          ],
+          "settings": {}
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collections-0": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-1": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-2": {
+              "type": "collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "featured-collections-0",
+            "featured-collections-1",
+            "featured-collections-2"
+          ],
+          "settings": {}
+        },
+        "featured-products": {
+          "type": "featured-products",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "image-content": {
+          "type": "image-content",
+          "blocks": {
+            "image-content-0": {
+              "type": "image_block",
+              "settings": {}
+            },
+            "image-content-1": {
+              "type": "text_block",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "image-content-0",
+            "image-content-1"
+          ],
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-collections",
+        "featured-products",
+        "image-content"
+      ]
+    },
+    "Outdoors": {
+      "checkout_accent_color": "#f4743c",
+      "checkout_banner_background_color": "#fff",
+      "checkout_button_color": "#f4743c",
+      "checkout_call_to_action_color": "#f4743c",
+      "checkout_use_header_image": false,
+      "color_body_bg": "#f7f7f7",
+      "color_body_headings": "#1a1a1a",
+      "color_body_text": "#666",
+      "color_button_bg": "#c04f1d",
+      "color_button_text": "#fff",
+      "color_content_bg": "#ffffff",
+      "color_footer_bg": "#213236",
+      "color_footer_text": "#fff",
+      "color_header_bg": "#213236",
+      "color_header_links": "#ffffff",
+      "color_hero_bg": "#f4743c",
+      "color_hero_text": "#fff",
+      "color_newsletter_input": "#425154",
+      "type_accent_family": "lora_n7",
+      "type_accent_spacing": false,
+      "type_accent_transform": false,
+      "type_base_family": "roboto_n4",
+      "type_base_size": "14px",
+      "type_nav_size": "15px",
+      "type_nav_spacing": false,
+      "type_nav_transform": false
+    },
+    "Boxing": {
+      "checkout_accent_color": "#d8232f",
+      "checkout_banner_background_color": "#fff",
+      "checkout_button_color": "#d8232f",
+      "checkout_call_to_action_color": "#d8232f",
+      "checkout_use_header_image": false,
+      "color_body_bg": "#f0f0f0",
+      "color_body_headings": "#222222",
+      "color_body_text": "#666",
+      "color_button_bg": "#d8232f",
+      "color_button_text": "#fff",
+      "color_content_bg": "#ffffff",
+      "color_footer_bg": "#222222",
+      "color_footer_text": "#ffffff",
+      "color_header_bg": "#222222",
+      "color_header_links": "#ffffff",
+      "color_hero_bg": "#d8232f",
+      "color_hero_text": "#fff",
+      "color_newsletter_input": "#303030",
+      "type_accent_family": "open_sans_condensed_n7",
+      "type_accent_spacing": false,
+      "type_accent_transform": true,
+      "type_base_family": "source_sans_pro_n4",
+      "type_base_size": "17px",
+      "type_nav_size": "14px",
+      "type_nav_spacing": true,
+      "type_nav_transform": true
+    }
+  }
+}

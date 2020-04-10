@@ -1,0 +1,27 @@
+{% if page.content == blank %}
+    {% assign blockClass = "content-block--no-bottom-padding" %}
+{% else %}
+    {% assign blockClass = "content-block" %}
+{% endif %}
+
+
+
+
+<div class="page-width">
+  <h1 class="small--text-center">{{ page.title }}</h1>
+    <div class={{blockClass}}>
+      <div class="rte rte--indented-images">
+        {{ page.content }}
+      </div>
+    </div>
+
+
+  {% if page.title == "how it works." %}
+  	{% section 'image-content-info2' %}
+  {% elsif page.title == "sell gift cards now, for later." %}
+ 	 {% section 'image-content-info-list' %}
+  {% else %}
+	<!--  NO SECTION TO RENDER  -->
+  {% endif %}
+
+</div>

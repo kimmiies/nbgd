@@ -1,0 +1,120 @@
+<div class="section-block section-block--padding">
+  {% for block in section.blocks %}
+	<div class="flex image-content-info" {{ block.shopify_attributes }}>  
+        <div class="image-content-info__image-container">
+          {% if block.settings.image != blank %}
+            <noscript>
+              <img src="{{ block.settings.image | img_url: '600x' }}" alt="{{ block.settings.image.alt }}" class="image-content__image">
+            </noscript>
+            <div class="image-content-info__image-wrapper">
+              {% assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+              <img class="image-content-info__image lazyload"
+                src="{{ block.settings.image | img_url: '300x300' }}"
+                data-src="{{ img_url }}"
+                data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+                data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                data-sizes="auto"
+                alt="{{ block.settings.image.alt | escape }}">
+            </div>
+          {% else %}
+            <div class="image-content-info__image-wrapper">
+              <div class="image-content-info__image">
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+
+
+        <div class="image-content-info__text">
+          <h3>{{ block.settings.title | escape }}</h3>
+          <div class="rte-setting">{{ block.settings.listitem1 }}</div>
+		  <div class="rte-setting">{{ block.settings.listitem2 }}</div>
+          <div class="rte-setting">{{ block.settings.listitem3 }}</div>
+        </div>
+     </div>
+  {% endfor %}
+
+
+  <div class="content-block content-block--extra-margin">
+  	<p><span>{{ section.settings.commentText }}&nbsp;<a href={{ section.settings.url }}>{{ section.settings.linkText }}</a></span></p>
+  <div>
+</div>
+
+
+
+{% stylesheet %}
+
+{% endstylesheet %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% schema %}
+{
+   "settings": [
+      {
+        "type": "text",
+        "id": "commentText",
+        "label": "Text"
+      },
+      {
+          "type": "url",
+          "id": "url",
+          "label": "Link to another page"
+      },
+      {
+          "type": "text",
+          "id": "linkText",
+          "label": "Link Text"
+      }	
+    ],
+	"blocks": [{
+		"type": "imageTextInfo",
+		"name": "Image Text Info",
+		"settings": [{
+				"type": "image_picker",
+				"id": "image",
+				"label": "Image"
+			},
+			{
+				"type": "text",
+				"id": "title",
+				"label": "Heading"
+			},
+			{
+				"type": "richtext",
+				"id": "listitem1",
+				"label": "List Item 1"
+			},
+			{
+				"type": "richtext",
+				"id": "listitem2",
+				"label": "List Item 2"
+			},
+			{
+				"type": "richtext",
+				"id": "listitem3",
+				"label": "List Item 3"
+			}
+		]
+	}
+]
+}
+{% endschema %}
+
+
+
+{% javascript %}
+{% endjavascript %}
