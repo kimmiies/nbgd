@@ -1403,6 +1403,7 @@ ol {
   white-space: nowrap;
   cursor: pointer;
   border: 1px solid transparent;
+  border-radius: 8px; // Kim added 4.10
   @include user-select();
   @include prefix(appearance, none, webkit moz spec);
 
@@ -1967,7 +1968,7 @@ h1 {
   font-size: em(30);
 
   @include media-query($medium-up) {
-    font-size: em(36);
+    font-size: em(38);
   }
 }
 
@@ -3988,12 +3989,12 @@ html {
 
 
 .product-gc {
-   position: relative; // DO NOT DELETE ME 
+   position: relative; // DO NOT DELETE ME
 }
 
 
 .product-gc__meta {
-   padding: 0 0 $gutter-site $gutter-site;	
+   padding: 0 0 $gutter-site $gutter-site;
 }
 
 // Nesting the classes below for extra specificity
@@ -6954,3 +6955,63 @@ body {
   }
 }
 
+/*================ Custom Homepage ================*/
+// @include media-query($medium-up) {}
+// @include media-query($small) {}
+
+
+.section-1 {
+  .right {
+    @include media-query($small) {
+      display: none;
+    }
+  }
+}
+
+h5.accent {
+  color: #9D8058 !important;
+}
+
+.h1--secondary {
+  color: #FFF;
+}
+
+.box-shadow {
+  border-radius: 16px;
+  box-shadow: 0.6px 0 10px 0 #F6F2E2;
+}
+
+.box-1 {
+  background: #FFFFFF;
+}
+
+.box-2 {
+  background: #2B6869;
+}
+
+.info {
+  display: flex;
+}
+
+.info__number-container {
+  border-radius: 50%;
+  height: 46px;
+  width: 46px;
+  background-color: #EBE0CE;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.info__number {
+  color: #9D8058;
+}
+
+.info__text {
+  margin-left: 20px;
+}
+
+.info__text h5 {
+  color: #252525 !important;
+}

@@ -1,0 +1,156 @@
+<div class="page-width">
+  <div class="section-block section-block--padding section-1">
+    <div class="left">
+      <h1>buy a gift card now, for later.</h1>
+      <h5 class="accent">we're looking at your toronto.</h5>
+      <p>Support your fave local businesses today with gift cards you can redeem later, during more social times.</p>
+      <a href="https://boxcarsocial.ackroo.net/en/gifts/new" target="_blank" rel="noopener noreferrer" class="btn">shop gift cards</a>
+    </div>
+    <div class="right">
+      <div class="image-content-info__image-wrapper">
+        <img class="image-content-info__image lazyload"
+          src="https://cdn.shopify.com/s/files/1/0358/0811/6871/files/homeheader_2x_720x_1eaf8c2a-037a-4d9c-a878-99296767c468_360x.png?v=1585190471"
+        />
+      </div>
+      <!-- <div class="image-content-info__image-wrapper">
+        {% assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+        <img class="image-content-info__image lazyload"
+          src="{{ block.settings.image | img_url: '300x300' }}"
+          data-src="{{ img_url }}"
+          data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+          data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+          data-sizes="auto"
+          alt="{{ block.settings.image.alt | escape }}">
+      </div> -->
+    </div>
+  </div>
+
+  <div class="section-block section-block--padding section-2">
+    <div class="box-shadow box-1">
+      <div class="left">
+        <div class="image-content-info__image-wrapper">
+          <img class="image-content-info__image lazyload"
+            src="https://cdn.shopify.com/s/files/1/0358/0811/6871/files/homeheader_2x_720x_1eaf8c2a-037a-4d9c-a878-99296767c468_360x.png?v=1585190471"
+          />
+        </div>
+      </div>
+      <div class="right">
+        <h2>are you a small business?</h2>
+        <h5 class="accent">join for free!</h5>
+        <p>We’ll get you set up and accepting cash-flow right into your business account(s). Did we mention it’s free?</p>
+        <a href="https://boxcarsocial.ackroo.net/en/gifts/new" target="_blank" rel="noopener noreferrer" class="btn">sign me up</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section-block section-block--padding section-3">
+    <div class="left">
+      <h1>how it works.</h1>
+      <div class="info">
+        <div class="info__number-container">
+          <h5 class="info__number">1</h5>
+        </div>
+        <div class="info__text">
+          <h5>all you need is a free payment processor.</h5>
+          <p>(Stripe • Square • PayPal)</p>
+        </div>
+      </div>
+      <div class="info">
+        <div class="info__number-container">
+          <h5 class="info__number">2</h5>
+        </div>
+        <div class="info__text">
+          <h5>money instantly gets wired to you, direct.</h5>
+          <p>(when you sell a gift card)</p>
+        </div>
+      </div>
+      <div class="info">
+        <div class="info__number-container">
+          <h5 class="info__number">3</h5>
+        </div>
+        <div class="info__text">
+          <h5>track redemption later with an easy app.</h5>
+          <p>(Gift Up! to be exact)</p>
+        </div>
+      </div>
+      <a href="https://boxcarsocial.ackroo.net/en/gifts/new" target="_blank" rel="noopener noreferrer" class="">
+        <h5>full details</h5>
+        <span>></span>
+      </a>
+      <p>already sell gift cards on your own site? </br> we’ll help drive traffic.</p>
+    </div>
+    <div class="right">
+      <div class="box-shadow box-1">
+          <h2>Emily’s the best. She got us set up to sell in no time.</h2>
+          <p><b>Lorraine</b>The Maker Bean Cafe</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-block section-block--padding section-4">
+    <div class="box-shadow box-2">
+      <div class="left">
+        <h1 class="h1--secondary">money, i wanna start selling cards.</h1>
+      </div>
+      <div class="right">
+        <a href="https://boxcarsocial.ackroo.net/en/gifts/new" target="_blank" rel="noopener noreferrer" class="btn">sign up free now</a>
+        <a href="https://boxcarsocial.ackroo.net/en/gifts/new" target="_blank" rel="noopener noreferrer" class="">shop cards instead</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-block section-block--padding section-5">
+    <h1>have questions?</h1>
+    <h5>We’re here to help. Reach out anytime!</h5>
+  </div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": {
+    "en": "Newsletter"
+  },
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": {
+        "en": "Heading"
+      },
+      "default": {
+        "en": "Subscribe to our newsletter"
+      }
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": {
+        "en": "Subheading"
+      },
+      "default": {
+        "en": "<p>Promotions, new products and sales. Directly to your inbox.</p>"
+      }
+    },
+    {
+      "type": "paragraph",
+      "content": {
+        "en": "Any customers who sign up will have an account created for them in Shopify. [View customers](/admin/customers?query=&accepts_marketing=1)"
+      }
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Custom Homepage"
+      },
+      "category": {
+        "en": "NBGD Custom Sections"
+      }
+    }
+  ]
+}
+{% endschema %}
