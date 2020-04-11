@@ -6960,9 +6960,6 @@ body {
 // @include media-query($small) {}
 
 // Typography
-.h1--secondary {
-  color: #FFF;
-}
 
 h5.accent {
   color: #9D8058 !important;
@@ -7005,8 +7002,7 @@ h5.accent {
 }
 
 .ngbd-header__image {
-  height: 225px;
-  width: 275px;
+  min-width: 250px;
 }
 
 // Shared Styles
@@ -7017,21 +7013,40 @@ h5.accent {
 
 // SECTION BLOCK - Are you a small business banner
 
-.ngbd-join-banner {
+.ngbd-join-banner-container {
   background: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  margin: 20px 0 60px;
+  margin: 100px 0 60px;
   padding: 20px 0;
+  width: 120%;
 
   @include media-query($medium-up) {
-    flex-direction: row;
-    align-items: center;
+    width: 100%;
+    margin: 20px 0 60px;
   }
+}
+
+.ngbd-join-banner{
+  @include media-query($small) {
+    width: 100vw;
+    padding: 40px;
+    position: relative;
+  }
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
   .left {
     flex-basis: 100%;
     padding: 20px;
+
+    @include media-query($small) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-10%, -60%);
+    }
+
     @include media-query($medium-up) {
       padding: 40px;
       flex-basis: (2/6) * 100%;
@@ -7055,8 +7070,10 @@ h5.accent {
 }
 
 .ngbd-join-banner__image {
-  height: 147px;
-  width: 175px;
+  width: 115px;
+  @include media-query($medium-up) {
+    min-width: 150px;
+  }
 }
 
 
@@ -7082,7 +7099,7 @@ h5.accent {
   }
 
   .right {
-    flex-basis: 100%;
+    display: none;
     @include media-query($medium-up) {
       flex-basis: 50%;
       display: flex;
@@ -7093,18 +7110,21 @@ h5.accent {
 
 .info {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  padding-left: 65px;
 }
 
 .info__number-circle {
   border-radius: 50%;
-  height: 46px;
-  width: 46px;
+  height: 45px;
+  width: 45px;
   background-color: #EBE0CE;
   display: flex;
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  left: 0;
 }
 
 .info__number {
@@ -7112,7 +7132,7 @@ h5.accent {
 }
 
 .info__text-container {
-  margin-left: 20px;
+  // margin-left: 20px;
 }
 
 .info__title {
@@ -7122,6 +7142,45 @@ h5.accent {
 
 .info--secondary {
   margin: 20px 0;
+}
+
+.info--margin {
+  margin: 0 0 20px;
+  @include media-query($medium-up) {
+    margin: 20px 0 40px;
+  }
+}
+
+.info__link {
+  padding: 20px 0;
+}
+
+.testimonial--mobile {
+  background: #FFFFFF;
+  margin: 100px 0 60px;
+  padding: 20px 0;
+  width: 120%;
+  margin-left: -20%; // Shifts the container off the left side
+
+  @include media-query($medium-up) {
+    display: none;
+  }
+
+  .testimonial {
+    margin-left: 40px;
+  }
+
+  .testimonial-quote--top {
+    top: 0;
+    left: 0;
+    transform: translate(5%, -85%);
+  }
+
+  .testimonial-quote--bottom {
+    bottom: 0;
+    right: 0;
+    transform: translate(40%, 90%);
+  }
 }
 
 .testimonial {
@@ -7134,9 +7193,6 @@ h5.accent {
 }
 
 .testimonial-quote {
-  height: 70px;
-  width: 50px;
-  background: #2B6869;
   position: absolute;
 }
 
@@ -7146,25 +7202,28 @@ h5.accent {
 }
 
 .testimonial-quote--bottom {
-  bottom: 10%;
+  bottom: 8%;
   right: -10%;
+
+  .testimonial-quote__image {
+    transform: rotate(180deg);
+  }
 }
 
-// SECTION BLOCK - Start Selling Banner
+// SECTION BLOCK - Money. Start Selling Banner
 
 .ngbd-signup-banner {
   background: #2B6869;
   margin: 20px 0 60px;
   padding: 20px 0;
-}
-
-.ngbd-signup-banner-container {
   display: flex;
   flex-direction: column;
+  height: 400px;
 
   @include media-query($medium-up) {
     flex-direction: row;
     align-items: center;
+    height: auto;
   }
 
   .left {
@@ -7176,9 +7235,22 @@ h5.accent {
     }
   }
 
+  .ngbd-signup-banner__title {
+    color: #FFF;
+    max-width: 500px;
+
+    .break--mobile {
+      // For mobile show <Br> element to break after the word "money". Ignore on large screens
+      @include media-query($medium-up) {
+        display: none;
+      }
+    }
+  }
+
   .right {
     flex-basis: 100%;
     padding: 20px;
+    position: relative;
     @include media-query($medium-up) {
       padding: 40px;
       flex-basis: (2/6) * 100%;
@@ -7188,17 +7260,12 @@ h5.accent {
   }
 }
 
-.ngbd-signup-banner__link-container {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .ngbd-signup-banner__link {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(-100%);
   @include media-query($medium-up) {
-    flex-basis: (2/6) * 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    transform: translateY(100%);
   }
 }
 

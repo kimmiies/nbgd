@@ -9,35 +9,33 @@
       </div>
     </div>
     <div class="right ngbd-header__image-wrapper">
-      <!-- <div class="ngbd-header__image-wrapper"> -->
-        <img class="ngbd-header__image lazyload"
-          src="https://cdn.shopify.com/s/files/1/0358/0811/6871/files/homeheader_2x_720x_1eaf8c2a-037a-4d9c-a878-99296767c468_360x.png?v=1585190471"
-        />
-      <!-- </div> -->
-      <!-- <div class="image-content-info__image-wrapper">
-        {% assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
-        <img class="image-content-info__image lazyload"
-          src="{{ block.settings.image | img_url: '300x300' }}"
-          data-src="{{ img_url }}"
-          data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
-          data-aspectratio="{{ block.settings.image.aspect_ratio }}"
-          data-sizes="auto"
-          alt="{{ block.settings.image.alt | escape }}">
-      </div> -->
+      {% assign img_url = section.settings.ngbd-header-image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+      <img class="ngbd-header__image lazyload"
+        src="{{ section.settings.ngbd-header-image | img_url: '300x300' }}"
+        data-src="{{ img_url }}"
+        data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+        data-sizes="auto"
+        alt="{{ section.settings.ngbd-header-image-alt | escape }}">
     </div>
   </div>
 
-  <div class="section-block ngbd-join-banner box-shadow">
-    <div class="left ngbd-join-banner__image-wrapper">
-      <img class="ngbd-join-banner__image lazyload"
-        src="https://cdn.shopify.com/s/files/1/0358/0811/6871/files/homeheader_2x_720x_1eaf8c2a-037a-4d9c-a878-99296767c468_360x.png?v=1585190471"
-      />
-    </div>
-    <div class="right">
-      <h2>are you a small business?</h2>
-      <h5 class="accent">join for free!</h5>
-      <p>We’ll get you set up and accepting cash-flow right into your business account(s). Did we mention it’s free?</p>
-      <a href="https://boxcarsocial.ackroo.net/en/gifts/new" target="_blank" rel="noopener noreferrer" class="btn">sign me up</a>
+  <div class="section-block ngbd-join-banner-container box-shadow">
+    <div class="ngbd-join-banner">
+      <div class="left ngbd-join-banner__image-wrapper">
+        {% assign img_url = section.settings.ngbd-banner-image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+        <img class="ngbd-join-banner__image lazyload"
+          src="{{ section.settings.ngbd-banner-image | img_url: '300x300' }}"
+          data-src="{{ img_url }}"
+          data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+          data-sizes="auto"
+          alt="{{ section.settings.ngbd-banner-image-alt | escape }}">
+      </div>
+      <div class="right">
+        <h2>are you a small business?</h2>
+        <h5 class="accent">join for free!</h5>
+        <p>We’ll get you set up and accepting cash-flow right into your business account(s). Did we mention it’s free?</p>
+        <a href="https://boxcarsocial.ackroo.net/en/gifts/new" target="_blank" rel="noopener noreferrer" class="btn">sign me up</a>
+      </div>
     </div>
   </div>
 
@@ -73,37 +71,62 @@
             <p>(Gift Up! to be exact)</p>
           </div>
         </div>
-        <div class="info--secondary">
-          <a href="https://boxcarsocial.ackroo.net/en/gifts/new" target="_blank" rel="noopener noreferrer" class="">
-            <h5>full details<span>></span></h5>
+        <div class="info info--margin">
+          <a href="https://boxcarsocial.ackroo.net/en/gifts/new" target="_blank" rel="noopener noreferrer" class="info__link">
+            <h5>full details<span>&nbsp;&gt;</span></h5>
           </a>
-          <p>already sell gift cards on your own site? </br> we’ll help drive traffic.</p>
+        </div>
+        <div class="info">
+          <p>already sell gift cards on your own site? <span>we’ll help drive traffic.</span></p>
         </div>
       </div>
       <div class="right">
         <div class="box-shadow testimonial">
-          <div class="testimonial-quote testimonial-quote--top"></div>
+          <div class="testimonial-quote testimonial-quote--top">
+            <img class="testimonial-quote__image lazyload"
+              src="{{ section.settings.ngbd-testimonial-image | img_url: '300x300' }}"
+            />
+          </div>
             <h2>Emily’s the best. She got us set up to sell in no time.</h2>
             <p><b>Lorraine</b></p>
             <p>The Maker Bean Cafe</p>
-          <div class="testimonial-quote testimonial-quote--bottom"></div>
+          <div class="testimonial-quote testimonial-quote--bottom">
+            <img class="testimonial-quote__image lazyload"
+              src="{{ section.settings.ngbd-testimonial-image | img_url: '300x300' }}"
+            />
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="section-block ngbd-signup-banner box-shadow">
-    <div class="ngbd-signup-banner-container">
-      <div class="left">
-        <h1 class="h1--secondary">money, i wanna start selling cards.</h1>
+  <!-- ONLY SHOW THIS ON MOBILE -->
+  <div class="section-block testimonial--mobile box-shadow">
+    <div class="testimonial">
+      <div class="testimonial-quote testimonial-quote--top">
+        <img class="testimonial-quote__image lazyload"
+          src="{{ section.settings.ngbd-testimonial-image | img_url: '300x300' }}"
+        />
       </div>
-      <div class="right">
-        <div>
-          <a href="https://boxcarsocial.ackroo.net/en/gifts/new" target="_blank" rel="noopener noreferrer" class="btn btn--nbgd">sign up free now</a>
-        </div>
+        <h2>Emily’s the best. She got us set up to sell in no time.</h2>
+        <p><b>Lorraine</b></p>
+        <p>The Maker Bean Cafe</p>
+      <div class="testimonial-quote testimonial-quote--bottom">
+        <img class="testimonial-quote__image lazyload"
+          src="{{ section.settings.ngbd-testimonial-image | img_url: '300x300' }}"
+        />
       </div>
     </div>
-    <div class="ngbd-signup-banner__link-container">
+  </div>
+
+  <div class="section-block ngbd-signup-banner box-shadow">
+    <div class="left">
+      <h1 class="ngbd-signup-banner__title">money.<br class="break--mobile"/> i wanna start selling cards.</h1>
+    </div>
+    <div class="right">
+      <div>
+        <a href="https://boxcarsocial.ackroo.net/en/gifts/new" target="_blank" rel="noopener noreferrer" class="btn btn--nbgd">sign up free now</a>
+      </div>
       <div class="ngbd-signup-banner__link">
         <a href="https://boxcarsocial.ackroo.net/en/gifts/new" target="_blank" rel="noopener noreferrer" class="link--ngbd">shop cards instead</a>
       </div>
@@ -121,7 +144,7 @@
 {% schema %}
 {
   "name": {
-    "en": "Newsletter"
+    "en": "Custom Homepage"
   },
   "class": "index-section",
   "settings": [
@@ -150,6 +173,36 @@
       "content": {
         "en": "Any customers who sign up will have an account created for them in Shopify. [View customers](/admin/customers?query=&accepts_marketing=1)"
       }
+    },
+    {
+      "type": "text",
+      "id": "commentText",
+      "label": "Text"
+    },
+    {
+        "type": "url",
+        "id": "url",
+        "label": "Link to another page"
+    },
+    {
+        "type": "text",
+        "id": "linkText",
+        "label": "Link Text"
+    }	,
+    {
+      "type": "image_picker",
+      "id": "ngbd-header-image",
+      "label": "Header Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "ngbd-banner-image",
+      "label": "Banner Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "ngbd-testimonial-image",
+      "label": "Testimonial Image"
     }
   ],
   "presets": [
