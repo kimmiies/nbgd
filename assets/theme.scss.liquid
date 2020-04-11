@@ -6959,41 +6959,144 @@ body {
 // @include media-query($medium-up) {}
 // @include media-query($small) {}
 
-
-.section-1 {
-  .right {
-    @include media-query($small) {
-      display: none;
-    }
-  }
-}
-
-h5.accent {
-  color: #9D8058 !important;
-}
-
+// Typography
 .h1--secondary {
   color: #FFF;
 }
 
+h5.accent {
+  color: #9D8058 !important;
+  margin-bottom: 5px;
+}
+
+
+// Sections
+
+.ngbd-header {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin: 20px 0 60px;
+
+  .left {
+    @include media-query($small) {
+      flex-basis: 100%;
+    }
+    flex-basis: (4/6) * 100%;
+  }
+  .right {
+    @include media-query($small) {
+      display: none;
+    }
+    flex-basis: (2/6) * 100%;
+  }
+}
+
+.ngbd-header__subtext {
+  @include media-query($medium-up) {
+    width: 70%;
+  }
+}
+
+.ngbd-header__image-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.ngbd-header__image {
+  height: 225px;
+  width: 275px;
+}
+
+// Shared Styles
 .box-shadow {
   border-radius: 16px;
-  box-shadow: 0.6px 0 10px 0 #F6F2E2;
+  box-shadow: 0 6px 10px 0 #F6F2E2;
 }
 
-.box-1 {
+// SECTION BLOCK - Are you a small business banner
+
+.ngbd-join-banner {
   background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 60px;
+  padding: 20px 0;
+
+  @include media-query($medium-up) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .left {
+    flex-basis: 100%;
+    padding: 20px;
+    @include media-query($medium-up) {
+      padding: 40px;
+      flex-basis: (2/6) * 100%;
+    }
+  }
+
+  .right {
+    flex-basis: 100%;
+    padding: 20px;
+    @include media-query($medium-up) {
+      padding: 40px;
+      flex-basis: (4/6) * 100%;
+    }
+  }
 }
 
-.box-2 {
-  background: #2B6869;
+.ngbd-join-banner__image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ngbd-join-banner__image {
+  height: 147px;
+  width: 175px;
+}
+
+
+// SECTION BLOCK - How it works
+
+.ngbd-info-block {
+  margin: 20px 0 60px;
+}
+
+.ngbd-info-block__container {
+  display: flex;
+  flex-direction: column;
+  @include media-query($medium-up) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .left {
+    flex-basis: 100%;
+    @include media-query($medium-up) {
+      flex-basis: 50%;
+    }
+  }
+
+  .right {
+    flex-basis: 100%;
+    @include media-query($medium-up) {
+      flex-basis: 50%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
 }
 
 .info {
   display: flex;
+  margin-bottom: 10px;
 }
 
-.info__number-container {
+.info__number-circle {
   border-radius: 50%;
   height: 46px;
   width: 46px;
@@ -7008,10 +7111,141 @@ h5.accent {
   color: #9D8058;
 }
 
-.info__text {
+.info__text-container {
   margin-left: 20px;
 }
 
-.info__text h5 {
+.info__title {
   color: #252525 !important;
+  margin-bottom: 5px;
+}
+
+.info--secondary {
+  margin: 20px 0;
+}
+
+.testimonial {
+  width: 325px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 40px;
+}
+
+.testimonial-quote {
+  height: 70px;
+  width: 50px;
+  background: #2B6869;
+  position: absolute;
+}
+
+.testimonial-quote--top {
+  top: 10%;
+  left: -10%;
+}
+
+.testimonial-quote--bottom {
+  bottom: 10%;
+  right: -10%;
+}
+
+// SECTION BLOCK - Start Selling Banner
+
+.ngbd-signup-banner {
+  background: #2B6869;
+  margin: 20px 0 60px;
+  padding: 20px 0;
+}
+
+.ngbd-signup-banner-container {
+  display: flex;
+  flex-direction: column;
+
+  @include media-query($medium-up) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .left {
+    flex-basis: 100%;
+    padding: 20px;
+    @include media-query($medium-up) {
+      padding: 40px;
+      flex-basis: (4/6) * 100%;
+    }
+  }
+
+  .right {
+    flex-basis: 100%;
+    padding: 20px;
+    @include media-query($medium-up) {
+      padding: 40px;
+      flex-basis: (2/6) * 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.ngbd-signup-banner__link-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ngbd-signup-banner__link {
+  @include media-query($medium-up) {
+    flex-basis: (2/6) * 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.btn--nbgd  {
+  flex: 0 0;
+  background-color: $color-body !important;
+  color: #2B6869 !important;
+
+  &:hover {
+    background-color: $color-body;
+    color: #2B6869;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $color-body;
+    color: #2B6869;
+  }
+}
+
+.link--ngbd {
+  flex: 0 0;
+  display: block;
+  color: $color-body;
+  text-decoration: underline;
+  transition: $link-transition;
+
+  &:hover,
+  &:focus {
+    color: $color-body;
+  }
+}
+
+.ngbd-questions-block {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 60px;
+  @include media-query($medium-up) {
+    align-items: center;
+    padding: 40px 0 20px;
+  }
+}
+
+.ngbd-questions-block__title {
+
+}
+
+.ngbd-questions-block__subtext {
+
 }
