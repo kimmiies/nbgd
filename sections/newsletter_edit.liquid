@@ -1,38 +1,38 @@
 <div class="page-width">
-  <div class="section-block ngbd-header">
+  <div class="section-block nbgd-header">
     <div class="left">
-      <h1 class="ngbd-header__title">buy a gift card now, for later.</h1>
-      <div class="ngbd-header__subtext">
-        <h5 class="accent">we're looking at your toronto.</h5>
+      <h1 class="nbgd-h1 nbgd-header__title">buy a gift card now, for later.</h1>
+      <div class="nbgd-header__subtext">
+        <h5 class="nbgd-h5 nbgd-h5--secondary">we're looking at your toronto.</h5>
         <p>Support your fave local businesses today with gift cards you can redeem later, during more social times.</p>
         <a href="https://boxcarsocial.ackroo.net/en/gifts/new" target="_blank" rel="noopener noreferrer" class="btn">shop gift cards</a>
       </div>
     </div>
-    <div class="right ngbd-header__image-wrapper">
-      {% assign img_url = section.settings.ngbd-header-image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
-      <img class="ngbd-header__image lazyload"
-        src="{{ section.settings.ngbd-header-image | img_url: '300x300' }}"
+    <div class="right nbgd-header__image-wrapper">
+      {% assign img_url = section.settings.nbgd-header-image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+      <img class="nbgd-header__image lazyload"
+        src="{{ section.settings.nbgd-header-image | img_url: '300x300' }}"
         data-src="{{ img_url }}"
         data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
         data-sizes="auto"
-        alt="{{ section.settings.ngbd-header-image-alt | escape }}">
+        alt="{{ section.settings.nbgd-header-image-alt | escape }}">
     </div>
   </div>
 
-  <div class="section-block ngbd-join-banner-container box-shadow">
-    <div class="ngbd-join-banner">
-      <div class="left ngbd-join-banner__image-wrapper">
-        {% assign img_url = section.settings.ngbd-banner-image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
-        <img class="ngbd-join-banner__image lazyload"
-          src="{{ section.settings.ngbd-banner-image | img_url: '300x300' }}"
+  <div class="section-block nbgd-join-banner-container box-shadow">
+    <div class="nbgd-join-banner">
+      <div class="left nbgd-join-banner__image-wrapper">
+        {% assign img_url = section.settings.nbgd-banner-image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+        <img class="nbgd-join-banner__image lazyload"
+          src="{{ section.settings.nbgd-banner-image | img_url: '300x300' }}"
           data-src="{{ img_url }}"
           data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
           data-sizes="auto"
-          alt="{{ section.settings.ngbd-banner-image-alt | escape }}">
+          alt="{{ section.settings.nbgd-banner-image-alt | escape }}">
       </div>
       <div class="right">
-        <h2>are you a small business?</h2>
-        <h5 class="accent">join for free!</h5>
+        <h2 class="nbgd-h2">are you a small business?</h2>
+        <h5 class="nbgd-h5 nbgd-h5--secondary">join for free!</h5>
         <p>We’ll get you set up and accepting cash-flow right into your business account(s). Did we mention it’s free?</p>
         <a href="https://boxcarsocial.ackroo.net/en/gifts/new" target="_blank" rel="noopener noreferrer" class="btn">sign me up</a>
       </div>
@@ -40,16 +40,16 @@
   </div>
 
 
-  <div class="section-block ngbd-info-block">
-    <h1 class="ngbd-info-block__title">how it works.</h1>
-    <div class="ngbd-info-block__container">
+  <div class="section-block nbgd-info-block">
+    <h1 class="nbgd-h1 nbgd-info-block__title">how it works.</h1>
+    <div class="nbgd-info-block__container">
       <div class="left">
         <div class="info">
           <div class="info__number-circle">
             <h5 class="info__number">1</h5>
           </div>
           <div class="info__text-container">
-            <h5 class="info__title">all you need is a free payment processor.</h5>
+            <h5 class="nbgd-h5 info__title">all you need is a free payment processor.</h5>
             <p>(Stripe • Square • PayPal)</p>
           </div>
         </div>
@@ -58,7 +58,7 @@
             <h5 class="info__number">2</h5>
           </div>
           <div class="info__text-container">
-            <h5 class="info__title">money instantly gets wired to you, direct.</h5>
+            <h5 class="nbgd-h5 info__title">money instantly gets wired to you, direct.</h5>
             <p>(when you sell a gift card)</p>
           </div>
         </div>
@@ -67,7 +67,7 @@
             <h5 class="info__number">3</h5>
           </div>
           <div class="info__text-container">
-            <h5 class="info__title">track redemption later with an easy app.</h5>
+            <h5 class="nbgd-h5 info__title">track redemption later with an easy app.</h5>
             <p>(Gift Up! to be exact)</p>
           </div>
         </div>
@@ -84,15 +84,15 @@
         <div class="box-shadow testimonial">
           <div class="testimonial-quote testimonial-quote--top">
             <img class="testimonial-quote__image lazyload"
-              src="{{ section.settings.ngbd-testimonial-image | img_url: '300x300' }}"
+              src="{{ section.settings.nbgd-testimonial-image | img_url: '300x300' }}"
             />
           </div>
-            <h2>Emily’s the best. She got us set up to sell in no time.</h2>
+            <h2 class="nbgd-h2">Emily’s the best. She got us set up to sell in no time.</h2>
             <p><b>Lorraine</b></p>
             <p>The Maker Bean Cafe</p>
           <div class="testimonial-quote testimonial-quote--bottom">
             <img class="testimonial-quote__image lazyload"
-              src="{{ section.settings.ngbd-testimonial-image | img_url: '300x300' }}"
+              src="{{ section.settings.nbgd-testimonial-image | img_url: '300x300' }}"
             />
           </div>
         </div>
@@ -105,37 +105,38 @@
     <div class="testimonial">
       <div class="testimonial-quote testimonial-quote--top">
         <img class="testimonial-quote__image lazyload"
-          src="{{ section.settings.ngbd-testimonial-image | img_url: '300x300' }}"
+          src="{{ section.settings.nbgd-testimonial-image | img_url: '300x300' }}"
         />
       </div>
-        <h2>Emily’s the best. She got us set up to sell in no time.</h2>
+        <h2 class="nbgd-h2">Emily’s the best. She got us set up to sell in no time.</h2>
         <p><b>Lorraine</b></p>
         <p>The Maker Bean Cafe</p>
       <div class="testimonial-quote testimonial-quote--bottom">
         <img class="testimonial-quote__image lazyload"
-          src="{{ section.settings.ngbd-testimonial-image | img_url: '300x300' }}"
+          src="{{ section.settings.nbgd-testimonial-image | img_url: '300x300' }}"
         />
       </div>
     </div>
   </div>
 
-  <div class="section-block ngbd-signup-banner box-shadow">
+  <div class="section-block nbgd-signup-banner box-shadow">
     <div class="left">
-      <h1 class="ngbd-signup-banner__title">money.<br class="break--mobile"/> i wanna start selling cards.</h1>
+      <h1 class="nbgd-h1 nbgd-signup-banner__title">money.<br class="break--mobile"/> i wanna start selling cards.</h1>
     </div>
     <div class="right">
       <div>
         <a href="https://boxcarsocial.ackroo.net/en/gifts/new" target="_blank" rel="noopener noreferrer" class="btn btn--nbgd">sign up free now</a>
       </div>
-      <div class="ngbd-signup-banner__link">
-        <a href="https://boxcarsocial.ackroo.net/en/gifts/new" target="_blank" rel="noopener noreferrer" class="link--ngbd">shop cards instead</a>
+      <div class="nbgd-signup-banner__link">
+        <a href="https://boxcarsocial.ackroo.net/en/gifts/new" target="_blank" rel="noopener noreferrer" class="nbgd-link nbgd-link--secondary">shop cards instead</a>
       </div>
     </div>
   </div>
 
-  <div class="section-block ngbd-questions-block">
-    <h1 class="ngbd-questions-block__title">have questions?</h1>
-    <p class="ngbd-questions-block__subtext">We’re here to help. Reach out anytime!</p>
+  <div class="section-block nbgd-questions-block">
+    <h1 class="nbgd-h1 nbgd-questions-block__title">have questions?</h1>
+    <p class="nbgd-questions-block__subtext">We’re here to help.
+      <a href="www.google.com" class="nbgd-link"><span>Reach out&nbsp;</span></a>anytime!</p>
   </div>
 </div>
 
@@ -191,17 +192,17 @@
     }	,
     {
       "type": "image_picker",
-      "id": "ngbd-header-image",
+      "id": "nbgd-header-image",
       "label": "Header Image"
     },
     {
       "type": "image_picker",
-      "id": "ngbd-banner-image",
+      "id": "nbgd-banner-image",
       "label": "Banner Image"
     },
     {
       "type": "image_picker",
-      "id": "ngbd-testimonial-image",
+      "id": "nbgd-testimonial-image",
       "label": "Testimonial Image"
     }
   ],

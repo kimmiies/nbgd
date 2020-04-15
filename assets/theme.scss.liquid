@@ -1762,11 +1762,11 @@ label[for] {
 
 .main-content {
   display: block;
-  margin-top: $gutter-site * 1.5;
+  margin-top: $gutter-site * 3; // 60px NBGD 4.15
   padding-bottom: $gutter-site * 2;
 
   @include media-query($medium-up) {
-    margin-top: $gutter-site * 3;
+    margin-top: $gutter-site * 6; // 120px NBGD 4.15
     padding-bottom: $gutter-site * 4;
   }
 
@@ -2075,7 +2075,7 @@ h6 {
 
 /*================ Paragraph styles ================*/
 p {
-  margin: 0 0 ($gutter-site / 2);
+  margin: 0 0 $gutter-site;
 
   &:last-child {
     margin-bottom: 0;
@@ -2376,6 +2376,7 @@ textarea {
   @include button-text-style();
   padding: 15px 45px;
   transition: $button-transition;
+  margin: 20px 0;
 }
 
 .btn--narrow {
@@ -6961,15 +6962,29 @@ body {
 
 // Typography
 
-h5.accent {
+.nbgd-h1 {
+  font-size: 38px;
+  @include media-query($medium-up) {
+    margin-bottom: 40px;
+  }
+}
+
+.nbgd-h2 {
+  font-size: 30px;
+}
+
+.nbgd-h5 {
+  margin-bottom: 20px;
+}
+
+.nbgd-h5--secondary {
   color: #9D8058 !important;
-  margin-bottom: 5px;
 }
 
 
 // Sections
 
-.ngbd-header {
+.nbgd-header {
   padding: 0;
   display: flex;
   align-items: center;
@@ -6989,19 +7004,19 @@ h5.accent {
   }
 }
 
-.ngbd-header__subtext {
+.nbgd-header__subtext {
   @include media-query($medium-up) {
     width: 70%;
   }
 }
 
-.ngbd-header__image-wrapper {
+.nbgd-header__image-wrapper {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
 }
 
-.ngbd-header__image {
+.nbgd-header__image {
   min-width: 250px;
 }
 
@@ -7013,22 +7028,24 @@ h5.accent {
 
 // SECTION BLOCK - Are you a small business banner
 
-.ngbd-join-banner-container {
+.nbgd-join-banner-container {
   background: #FFFFFF;
   margin: 100px 0 60px;
-  padding: 20px 0;
+  padding: 0;
   width: 120%;
 
   @include media-query($medium-up) {
+    padding: 20px 0;
     width: 100%;
     margin: 20px 0 60px;
   }
 }
 
-.ngbd-join-banner{
+.nbgd-join-banner{
   @include media-query($small) {
     width: 100vw;
     padding: 40px;
+    padding-left: 45px;
     position: relative;
   }
 
@@ -7055,7 +7072,7 @@ h5.accent {
 
   .right {
     flex-basis: 100%;
-    padding: 20px;
+    padding: 0 20px;
     @include media-query($medium-up) {
       padding: 40px;
       flex-basis: (4/6) * 100%;
@@ -7063,13 +7080,13 @@ h5.accent {
   }
 }
 
-.ngbd-join-banner__image-wrapper {
+.nbgd-join-banner__image-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.ngbd-join-banner__image {
+.nbgd-join-banner__image {
   width: 115px;
   @include media-query($medium-up) {
     min-width: 150px;
@@ -7079,11 +7096,11 @@ h5.accent {
 
 // SECTION BLOCK - How it works
 
-.ngbd-info-block {
+.nbgd-info-block {
   margin: 20px 0 60px;
 }
 
-.ngbd-info-block__container {
+.nbgd-info-block__container {
   display: flex;
   flex-direction: column;
   @include media-query($medium-up) {
@@ -7110,7 +7127,7 @@ h5.accent {
 
 .info {
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 40px; //NBGD 4.15
   padding-left: 65px;
 }
 
@@ -7137,7 +7154,7 @@ h5.accent {
 
 .info__title {
   color: #252525 !important;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .info--secondary {
@@ -7145,7 +7162,7 @@ h5.accent {
 }
 
 .info--margin {
-  margin: 0 0 20px;
+  margin: 0 0 40px;
   @include media-query($medium-up) {
     margin: 20px 0 40px;
   }
@@ -7167,6 +7184,8 @@ h5.accent {
   }
 
   .testimonial {
+    padding: 40px;
+    padding-left: 85px;
     margin-left: 40px;
   }
 
@@ -7212,15 +7231,14 @@ h5.accent {
 
 // SECTION BLOCK - Money. Start Selling Banner
 
-.ngbd-signup-banner {
+.nbgd-signup-banner {
   background: #2B6869;
   margin: 20px 0 60px;
-  padding: 20px 0;
   display: flex;
   flex-direction: column;
-  height: 400px;
 
   @include media-query($medium-up) {
+    padding: 20px 0;
     flex-direction: row;
     align-items: center;
     height: auto;
@@ -7228,14 +7246,14 @@ h5.accent {
 
   .left {
     flex-basis: 100%;
-    padding: 20px;
+    padding: 65px 20px 0 65px;
     @include media-query($medium-up) {
       padding: 40px;
       flex-basis: (4/6) * 100%;
     }
   }
 
-  .ngbd-signup-banner__title {
+  .nbgd-signup-banner__title {
     color: #FFF;
     max-width: 500px;
 
@@ -7249,7 +7267,7 @@ h5.accent {
 
   .right {
     flex-basis: 100%;
-    padding: 20px;
+    padding: 20px 0 65px 65px;
     position: relative;
     @include media-query($medium-up) {
       padding: 40px;
@@ -7260,12 +7278,12 @@ h5.accent {
   }
 }
 
-.ngbd-signup-banner__link {
+.nbgd-signup-banner__link {
   position: absolute;
   bottom: 0;
-  transform: translateY(-100%);
+  transform: translateY(-50%);
   @include media-query($medium-up) {
-    transform: translateY(100%);
+    transform: translateY(50%);
   }
 }
 
@@ -7286,33 +7304,40 @@ h5.accent {
   }
 }
 
-.link--ngbd {
-  flex: 0 0;
-  display: block;
-  color: $color-body;
+.nbgd-link {
+  color: #252525;
   text-decoration: underline;
   transition: $link-transition;
 
   &:hover,
   &:focus {
-    color: $color-body;
+    opacity: 80%;
   }
 }
 
-.ngbd-questions-block {
+.nbgd-link--secondary {
+  color: $color-body;
+
+  &:hover,
+  &:focus {
+    color: #FFF;
+  }
+}
+
+.nbgd-questions-block {
   display: flex;
   flex-direction: column;
+  align-items: center !important;
   margin: 20px 0 60px;
   @include media-query($medium-up) {
-    align-items: center;
     padding: 40px 0 20px;
   }
 }
 
-.ngbd-questions-block__title {
+.nbgd-questions-block__title {
 
 }
 
-.ngbd-questions-block__subtext {
+.nbgd-questions-block__subtext {
 
 }
