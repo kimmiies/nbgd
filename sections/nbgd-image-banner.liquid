@@ -2,7 +2,7 @@
   <div class="section-block nbgd-join-banner-container box-shadow">
     <div class="nbgd-join-banner">
       <div class="left nbgd-join-banner__image-wrapper">
-        {% assign img_url = section.settings.nbgd-banner-image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+        {% assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
         <img class="nbgd-join-banner__image lazyload"
           src="{{ section.settings.image | img_url: '300x300' }}"
           data-src="{{ img_url }}"

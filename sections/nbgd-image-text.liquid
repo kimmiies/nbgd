@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="right nbgd-header__image-wrapper">
-      {% assign img_url = section.settings.header-image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+      {% assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
       <img class="nbgd-header__image lazyload"
         src="{{ section.settings.image | img_url: '300x300' }}"
         data-src="{{ img_url }}"
