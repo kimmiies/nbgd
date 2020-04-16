@@ -1,0 +1,65 @@
+<div class="page-width">
+  <div class="section-block nbgd-signup-banner box-shadow">
+    <div class="left">
+      <h1 class="nbgd-h1 nbgd-signup-banner__title">{{ section.settings.heading }}</h1>
+    </div>
+    <div class="right">
+      <div>
+        <a href="{{ section.settings.buttonUrl }}" target="_blank" rel="noopener noreferrer" class="btn btn--nbgd">{{ section.settings.buttonText }}</a>
+      </div>
+      <div class="nbgd-signup-banner__link">
+        <a href="{{ section.settings.linkUrl }}" target="_blank" rel="noopener noreferrer" class="nbgd-link nbgd-link--secondary">{{ section.settings.linkText }}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": {
+    "en": "NBGD Text Banner"
+  },
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "html",
+      "id": "heading",
+      "label": {
+        "en": "Heading"
+      }
+    },
+    {
+      "type": "url",
+      "id": "buttonUrl",
+      "label": "Button URL"
+    },
+    {
+        "type": "text",
+        "id": "buttonText",
+        "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "linkUrl",
+      "label": "Link URL"
+    },
+    {
+        "type": "text",
+        "id": "linkText",
+        "label": "Link Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Text Banner"
+      },
+      "category": {
+        "en": "NBGD Custom Sections"
+      }
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,124 @@
+<div class="page-width">
+  <div class="section-block nbgd-info-block">
+    <h1 class="nbgd-h1 nbgd-info-block__title">{{ section.settings.heading }}</h1>
+    <div class="nbgd-info-block__container">
+      <div class="left">
+        <div class="info">
+          <div class="info__number-circle">
+            <h5 class="info__number">1</h5>
+          </div>
+          <div class="info__text-container">
+            <h5 class="nbgd-h5 info__title">all you need is a free payment processor.</h5>
+            <p>(Stripe • Square • PayPal)</p>
+          </div>
+        </div>
+        <div class="info">
+          <div class="info__number-circle">
+            <h5 class="info__number">2</h5>
+          </div>
+          <div class="info__text-container">
+            <h5 class="nbgd-h5 info__title">money instantly gets wired to you, direct.</h5>
+            <p>(when you sell a gift card)</p>
+          </div>
+        </div>
+        <div class="info">
+          <div class="info__number-circle">
+            <h5 class="info__number">3</h5>
+          </div>
+          <div class="info__text-container">
+            <h5 class="nbgd-h5 info__title">track redemption later with an easy app.</h5>
+            <p>(Gift Up! to be exact)</p>
+          </div>
+        </div>
+        <div class="info info--margin">
+          <a href="{{ section.settings.linkUrl }}" target="_blank" rel="noopener noreferrer" class="info__link">
+            {{ section.settings.linkText}}
+          </a>
+        </div>
+        <div class="info">
+          <p>already sell gift cards on your own site? <span>we’ll help drive traffic.</span></p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="box-shadow testimonial">
+          <div class="testimonial-quote testimonial-quote--top">
+            <img class="testimonial-quote__image lazyload"
+              src="{{ section.settings.image | img_url: '300x300' }}"
+            />
+          </div>
+            <h2 class="nbgd-h2">{{ section.settings.testimonialHeading }}</h2>
+            <p><b>{{ section.settings.testimonialSubheading }}</b></p>
+            <p>{{ section.settings.testimonialParagraph }}</p>
+          <div class="testimonial-quote testimonial-quote--bottom">
+            <img class="testimonial-quote__image lazyload"
+              src="{{ section.settings.image | img_url: '300x300' }}"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": {
+    "en": "NBGD How it Works"
+  },
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "testimonialHeading",
+      "label":  "Testimonial Quote"
+    },
+    {
+      "type": "text",
+      "id": "testimonialSubheading",
+      "label":  "Testimonial Author"
+    },
+    {
+      "type": "text",
+      "id": "testimonialParagraph",
+      "label": "Testimonial Vendor"
+    },
+    {
+      "type": "text",
+      "id": "paragraph",
+      "label": "Comment"
+    },
+    {
+        "type": "url",
+        "id": "linkUrl",
+        "label": "Link URL"
+    },
+    {
+        "type": "html",
+        "id": "linkText",
+        "label": "Link Text"
+    }	,
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Quotes image"
+    },
+    {
+      "type": "text",
+      "id": "imageAlt",
+      "label": "Alternative text for Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "How it Works"
+      },
+      "category": {
+        "en": "NBGD Custom Sections"
+      }
+    }
+  ]
+}
+{% endschema %}

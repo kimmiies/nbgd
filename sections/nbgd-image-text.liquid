@@ -1,0 +1,79 @@
+<div class="page-width">
+  <div class="section-block nbgd-header">
+    <div class="left">
+      <h1 class="nbgd-h1 nbgd-header__title">{{ section.settings.heading }}</h1>
+      <div class="nbgd-header__subtext">
+        <h5 class="nbgd-h5 nbgd-h5--secondary">{{ section.settings.subheading }}</h5>
+        <p>{{ section.settings.paragraph }}</p>
+        <a href="{{ section.settings.linkUrl }}" target="_blank" rel="noopener noreferrer" class="btn">{{ section.settings.linkText }}</a>
+      </div>
+    </div>
+    <div class="right nbgd-header__image-wrapper">
+      {% assign img_url = section.settings.header-image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+      <img class="nbgd-header__image lazyload"
+        src="{{ section.settings.image | img_url: '300x300' }}"
+        data-src="{{ img_url }}"
+        data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+        data-sizes="auto"
+        alt="{{ section.settings.imageAlt | escape }}">
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": {
+    "en": "NBGD Image with Text"
+  },
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label":  "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "paragraph",
+      "label": "Text"
+    },
+    {
+        "type": "url",
+        "id": "linkUrl",
+        "label": "Link URL"
+    },
+    {
+        "type": "text",
+        "id": "linkText",
+        "label": "Link Text"
+    }	,
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Header Image"
+    },
+    {
+      "type": "text",
+      "id": "imageAlt",
+      "label": "Alternative text for Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Image with Text"
+      },
+      "category": {
+        "en": "NBGD Custom Sections"
+      }
+    }
+  ]
+}
+{% endschema %}
