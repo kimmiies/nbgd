@@ -1,0 +1,55 @@
+{% assign paragraphStart = section.settings.paragraph | split:"<!-- split -->"| first %}
+{% assign paragraphEnd = section.settings.paragraph | split:"<!-- split -->" | last %}
+
+<div class="page-width">
+  <div class="section-block nbgd-questions-block">
+    <h1 class="nbgd-h1 nbgd-questions-block__title">{{ section.settings.heading }}</h1>
+    <p class="nbgd-questions-block__subtext">{{ paragraphStart }}
+      <a href="{{ section.settings.linkUrl }}" class="nbgd-link">
+        <span>{{ section.settings.linkText }}</span>
+      </a>
+      {{ paragraphEnd }}
+    </p>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": {
+    "en": "NBGD Questions"
+  },
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "html",
+      "id": "paragraph",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "linkUrl",
+      "label": "Link URL"
+    },
+    {
+        "type": "text",
+        "id": "linkText",
+        "label": "Link Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Questions"
+      },
+      "category": {
+        "en": "NBGD Custom Sections"
+      }
+    }
+  ]
+}
+{% endschema %}

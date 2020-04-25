@@ -1403,6 +1403,7 @@ ol {
   white-space: nowrap;
   cursor: pointer;
   border: 1px solid transparent;
+  border-radius: 8px; // Kim added 4.10
   @include user-select();
   @include prefix(appearance, none, webkit moz spec);
 
@@ -1761,11 +1762,11 @@ label[for] {
 
 .main-content {
   display: block;
-  margin-top: $gutter-site * 1.5;
+  margin-top: $gutter-site * 3; // 60px NBGD 4.15
   padding-bottom: $gutter-site * 2;
 
   @include media-query($medium-up) {
-    margin-top: $gutter-site * 3;
+    margin-top: $gutter-site * 6; // 120px NBGD 4.15
     padding-bottom: $gutter-site * 4;
   }
 
@@ -1967,7 +1968,7 @@ h1 {
   font-size: em(30);
 
   @include media-query($medium-up) {
-    font-size: em(36);
+    font-size: em(38);
   }
 }
 
@@ -2074,7 +2075,7 @@ h6 {
 
 /*================ Paragraph styles ================*/
 p {
-  margin: 0 0 ($gutter-site / 2);
+  margin: 0 0 $gutter-site;
 
   &:last-child {
     margin-bottom: 0;
@@ -2375,6 +2376,7 @@ textarea {
   @include button-text-style();
   padding: 15px 45px;
   transition: $button-transition;
+  margin: 20px 0;
 }
 
 .btn--narrow {
@@ -3988,12 +3990,12 @@ html {
 
 
 .product-gc {
-   position: relative; // DO NOT DELETE ME 
+   position: relative; // DO NOT DELETE ME
 }
 
 
 .product-gc__meta {
-   padding: 0 0 $gutter-site $gutter-site;	
+   padding: 0 0 $gutter-site $gutter-site;
 }
 
 // Nesting the classes below for extra specificity
@@ -6954,3 +6956,391 @@ body {
   }
 }
 
+/*================ Custom Homepage ================*/
+// @include media-query($medium-up) {}
+// @include media-query($small) {}
+
+// Typography
+
+.nbgd-h1 {
+  font-size: 38px;
+  @include media-query($medium-up) {
+    margin-bottom: 40px;
+  }
+}
+
+.nbgd-h2 {
+  font-size: 30px;
+}
+
+.nbgd-h5 {
+  margin-bottom: 20px;
+}
+
+.nbgd-h5--secondary {
+  color: #9D8058 !important;
+}
+
+
+// Sections
+
+.nbgd-header {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin: 20px 0 60px;
+
+  .left {
+    @include media-query($small) {
+      flex-basis: 100%;
+    }
+    flex-basis: (4/6) * 100%;
+  }
+  .right {
+    @include media-query($small) {
+      display: none;
+    }
+    flex-basis: (2/6) * 100%;
+  }
+}
+
+.nbgd-header__subtext {
+  @include media-query($medium-up) {
+    width: 70%;
+  }
+}
+
+.nbgd-header__image-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.nbgd-header__image {
+  min-width: 250px;
+}
+
+// Shared Styles
+.box-shadow {
+  border-radius: 16px;
+  box-shadow: 0 6px 10px 0 #F6F2E2;
+}
+
+// SECTION BLOCK - Are you a small business banner
+
+.nbgd-join-banner-container {
+  background: #FFFFFF;
+  margin: 100px 0 60px;
+  padding: 0;
+  width: 120%;
+
+  @include media-query($medium-up) {
+    padding: 20px 0;
+    width: 100%;
+    margin: 20px 0 60px;
+  }
+}
+
+.nbgd-join-banner{
+  @include media-query($small) {
+    width: 100vw;
+    padding: 40px;
+    padding-left: 45px;
+    position: relative;
+  }
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .left {
+    flex-basis: 100%;
+    padding: 20px;
+
+    @include media-query($small) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-10%, -60%);
+    }
+
+    @include media-query($medium-up) {
+      padding: 40px;
+      padding-right: 0px;
+      flex-basis: (2/6) * 100%;
+    }
+  }
+
+  .right {
+    flex-basis: 100%;
+    padding: 0 20px;
+    @include media-query($medium-up) {
+      padding: 40px;
+      padding-left: 0px;
+      flex-basis: (4/6) * 100%;
+    }
+  }
+}
+
+.nbgd-join-banner__image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nbgd-join-banner__image {
+  width: 115px;
+  @include media-query($medium-up) {
+    min-width: 150px;
+  }
+}
+
+
+// SECTION BLOCK - How it works
+
+.nbgd-info-block {
+  margin: 20px 0 60px;
+}
+
+.nbgd-info-block__container {
+  display: flex;
+  flex-direction: column;
+  @include media-query($medium-up) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .left {
+    flex-basis: 100%;
+    @include media-query($medium-up) {
+      flex-basis: 50%;
+    }
+  }
+
+  .right {
+    display: none;
+    @include media-query($medium-up) {
+      flex-basis: 50%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.info {
+  display: flex;
+  margin-bottom: 40px; //NBGD 4.15
+  padding-left: 65px;
+}
+
+.info__number-circle {
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  background-color: #EBE0CE;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+}
+
+.info__number {
+  color: #9D8058;
+}
+
+.info__text-container {
+  // margin-left: 20px;
+}
+
+.info__title {
+  color: #252525 !important;
+  margin-bottom: 10px;
+}
+
+.info--secondary {
+  margin: 20px 0;
+}
+
+.info--margin {
+  margin: 0 0 40px;
+  @include media-query($medium-up) {
+    margin: 20px 0 40px;
+  }
+}
+
+.info__link {
+  padding: 20px 0;
+}
+
+.testimonial--mobile {
+  background: #FFFFFF;
+  margin: 100px 0 60px;
+  padding: 20px 0;
+  width: 120%;
+  margin-left: -20%; // Shifts the container off the left side
+
+  @include media-query($medium-up) {
+    display: none;
+  }
+
+  .testimonial {
+    padding: 40px;
+    padding-left: 85px;
+    margin-left: 40px;
+  }
+
+  .testimonial-quote--top {
+    top: 0;
+    left: 0;
+    transform: translate(5%, -85%);
+  }
+
+  .testimonial-quote--bottom {
+    bottom: 0;
+    right: 0;
+    transform: translate(40%, 90%);
+  }
+}
+
+.testimonial {
+  width: 325px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 40px;
+}
+
+.testimonial-quote {
+  position: absolute;
+}
+
+.testimonial-quote--top {
+  top: 10%;
+  left: -10%;
+}
+
+.testimonial-quote--bottom {
+  bottom: 8%;
+  right: -10%;
+
+  .testimonial-quote__image {
+    transform: rotate(180deg);
+  }
+}
+
+// SECTION BLOCK - Money. Start Selling Banner
+
+.nbgd-signup-banner {
+  background: #2B6869;
+  margin: 20px 0 60px;
+  display: flex;
+  flex-direction: column;
+
+  @include media-query($medium-up) {
+    padding: 20px 0;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+  }
+
+  .left {
+    flex-basis: 100%;
+    padding: 65px 20px 0 65px;
+    @include media-query($medium-up) {
+      padding: 40px;
+      flex-basis: (4/6) * 100%;
+    }
+  }
+
+  .nbgd-signup-banner__title {
+    color: #FFF;
+    max-width: 500px;
+
+    .break--mobile {
+      // For mobile show <Br> element to break after the word "money". Ignore on large screens
+      @include media-query($medium-up) {
+        display: none;
+      }
+    }
+  }
+
+
+  .right {
+    flex-basis: 100%;
+    padding: 20px 0 65px 65px;
+    position: relative;
+    @include media-query($medium-up) {
+      padding: 40px;
+      flex-basis: (2/6) * 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.nbgd-signup-banner__link {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(-50%);
+  @include media-query($medium-up) {
+    transform: translateY(50%);
+  }
+}
+
+.btn--nbgd  {
+  flex: 0 0;
+  background-color: $color-body !important;
+  color: #2B6869 !important;
+
+  &:hover {
+    background-color: $color-body;
+    color: #2B6869;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $color-body;
+    color: #2B6869;
+  }
+}
+
+.nbgd-link {
+  color: #252525;
+  text-decoration: underline;
+  transition: $link-transition;
+
+  &:hover,
+  &:focus {
+    opacity: 80%;
+  }
+}
+
+.nbgd-link--secondary {
+  color: $color-body;
+
+  &:hover,
+  &:focus {
+    color: #FFF;
+  }
+}
+
+.nbgd-questions-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  margin: 20px 0 60px;
+  @include media-query($medium-up) {
+    padding: 40px 0 20px;
+  }
+}
+
+.nbgd-questions-block__title {
+
+}
+
+.nbgd-questions-block__subtext {
+
+}
