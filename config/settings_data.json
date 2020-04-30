@@ -86,52 +86,6 @@
           "show_payment_icons": true
         }
       },
-      "featured-collections": {
-        "type": "featured-collections",
-        "disabled": true,
-        "blocks": {
-          "featured-collections-0": {
-            "type": "collection",
-            "settings": {
-              "collection": ""
-            }
-          },
-          "featured-collections-1": {
-            "type": "collection",
-            "settings": {
-              "collection": "cafes"
-            }
-          },
-          "featured-collections-2": {
-            "type": "collection",
-            "settings": {
-              "collection": "shops"
-            }
-          },
-          "1584649967246": {
-            "type": "collection",
-            "settings": {
-              "collection": "health-wellness"
-            }
-          },
-          "1584591147774": {
-            "type": "collection",
-            "settings": {
-              "collection": "services"
-            }
-          }
-        },
-        "block_order": [
-          "featured-collections-0",
-          "featured-collections-1",
-          "featured-collections-2",
-          "1584649967246",
-          "1584591147774"
-        ],
-        "settings": {
-          "stretch_collection_image": false
-        }
-      },
       "header": {
         "type": "header",
         "settings": {
@@ -158,6 +112,7 @@
       },
       "1584676389554": {
         "type": "featured-content",
+        "disabled": true,
         "settings": {
           "title": "cafés & bars",
           "subtext": "view all",
@@ -168,6 +123,7 @@
       },
       "1584676573111": {
         "type": "featured-content",
+        "disabled": true,
         "settings": {
           "title": "restaurants",
           "subtext": "view all",
@@ -178,6 +134,7 @@
       },
       "1584683170432": {
         "type": "featured-content",
+        "disabled": true,
         "settings": {
           "title": "shops",
           "subtext": "view all",
@@ -188,6 +145,7 @@
       },
       "1584683343874": {
         "type": "featured-content",
+        "disabled": true,
         "settings": {
           "title": "services",
           "subtext": "view all",
@@ -198,6 +156,7 @@
       },
       "1584683390355": {
         "type": "featured-content",
+        "disabled": true,
         "settings": {
           "title": "health & wellness",
           "subtext": "view all",
@@ -206,27 +165,10 @@
           "image_align": "center center"
         }
       },
-      "1584734418738": {
-        "type": "advanced-content",
-        "blocks": {
-          "1584734418738-0": {
-            "type": "html",
-            "settings": {
-              "code": "",
-              "width": "100%",
-              "alignment": "top-middle"
-            }
-          }
-        },
-        "block_order": [
-          "1584734418738-0"
-        ],
-        "settings": {}
-      },
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
-          "message": true,
+          "message": false,
           "home_page_only": false,
           "header_padding": 39,
           "message_text": "we just launched! please help spread the word.",
@@ -243,6 +185,7 @@
       },
       "1584592441036": {
         "type": "advanced-content",
+        "disabled": true,
         "blocks": {
           "1584592441036-0": {
             "type": "html",
@@ -276,6 +219,7 @@
       },
       "1585180349867": {
         "type": "image-content",
+        "disabled": true,
         "blocks": {
           "1585180349867-1": {
             "type": "text_block",
@@ -304,7 +248,7 @@
           "1585497189649": {
             "type": "imageTextInfo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/mobilephone.png",
+              "image": "shopify:\/\/shop_images\/Asset_93_2x_2603b68f-0c37-41c7-a5a5-8bfa0eb72833.png",
               "title": "get your gift card now",
               "text": "<p>Purchase an e-gift card and you'll instantly receive&nbsp;it in your email<\/p>"
             }
@@ -312,7 +256,7 @@
           "1585497258175": {
             "type": "imageTextInfo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/pizzaslice.png",
+              "image": "shopify:\/\/shop_images\/Asset_94_2x_3c478a5c-db3e-4f3e-8caf-00e34ebf22db.png",
               "title": "redeem it later",
               "text": "<p>Pull up the card on your phone when you pay<\/p>"
             }
@@ -320,7 +264,7 @@
           "1585505012334": {
             "type": "imageTextInfo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/stackcoins.png",
+              "image": "shopify:\/\/shop_images\/Asset_95_2x_530b89fb-5291-424c-a217-06b36abecf83.png",
               "title": "support your neighbours",
               "text": "<p>Don&rsquo;t forget to tip on the full amount of your purchase (and tip generously!)<\/p>"
             }
@@ -343,17 +287,17 @@
           "1585505847124": {
             "type": "imageTextInfo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/paperplane.png",
+              "image": "shopify:\/\/shop_images\/Asset_91_2x_ba2a96f4-bae9-41e9-b3e8-70e44e5a908c.png",
               "title": "sign-up & payment",
               "listitem1": "<p>1.&nbsp; Fill&nbsp;out the quick&nbsp;form so we can get to know you<\/p>",
-              "listitem2": "<p>2.&nbsp; We'll help get your Gift Up! account started and send you instructions on connecting it to your&nbsp;bank account<\/p>",
+              "listitem2": "<p>2.&nbsp; We'll help get your free Gift Up! account started and send you instructions on connecting it to your&nbsp;bank account<\/p>",
               "listitem3": "<p>3.&nbsp; That's it! Payment will go directly to you. You&rsquo;ll receive all the proceeds minus the small credit card processing fee, which we can't avoid (2.90% + $0.30 per transaction)<\/p>"
             }
           },
           "1585505893151": {
             "type": "imageTextInfo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/storefront.png",
+              "image": "shopify:\/\/shop_images\/Asset_92_2x_a4b819f6-d8f2-4c8b-ba34-1d7b465ef2e0.png",
               "title": "redemption & tracking",
               "listitem1": "<p>1. When your doors open again, customers will show&nbsp;their e-gift card at purchase<\/p>",
               "listitem2": "<p>2. Use the free Gift Up! app to scan their code. It also helps you keep track of remaining balances<\/p>",
@@ -370,6 +314,62 @@
           "url": "shopify:\/\/pages\/reach-out",
           "linkText": "let us know."
         }
+      },
+      "1586995720050": {
+        "type": "nbgd-image-text",
+        "settings": {
+          "heading": "buy gift cards now, for later.",
+          "subheading": "we're looking at you, toronto.",
+          "paragraph": "Support your fave local businesses today with gift cards you can redeem later, when we can all be together again.",
+          "linkUrl": "shopify:\/\/collections",
+          "linkText": "shop gift cards",
+          "image": "shopify:\/\/shop_images\/homepage_image.png",
+          "imageAlt": "mobile image"
+        }
+      },
+      "1586996042220": {
+        "type": "nbgd-image-banner",
+        "settings": {
+          "heading": "are you a  small business?",
+          "subheading": "join us for free!",
+          "paragraph": "We’ll get you set up and accepting cash flow right into your business account(s). Also, did we mention it’s free?",
+          "linkUrl": "shopify:\/\/pages\/join",
+          "linkText": "sign me up",
+          "image": "shopify:\/\/shop_images\/banner-image-coin.png",
+          "imageAlt": "stack of coins"
+        }
+      },
+      "1586996139320": {
+        "type": "nbgd-text-banner",
+        "settings": {
+          "heading": "<span>money.<br class=\"break--mobile\"> i wanna start selling cards.<\/span>",
+          "buttonUrl": "shopify:\/\/pages\/join",
+          "buttonText": "sign up free now",
+          "linkUrl": "shopify:\/\/collections",
+          "linkText": "Shop cards instead"
+        }
+      },
+      "1586996520833": {
+        "type": "nbgd-questions",
+        "settings": {
+          "heading": "have questions?",
+          "paragraph": "<span>We’re here to help.<\/span>\n<br class=\"break--mobile\">\n<!-- split -->\n<span>anytime!<\/span>",
+          "linkUrl": "shopify:\/\/pages\/reach-out",
+          "linkText": "Reach out"
+        }
+      },
+      "1586996910914": {
+        "type": "nbgd-how-it-works",
+        "settings": {
+          "heading": "how it works.",
+          "testimonialHeading": "Their positive attitude and quick help setting up and sharing info has given us a much-needed lifeline in these difficult times.",
+          "testimonialSubheading": "Lorraine & Chris",
+          "testimonialParagraph": "The Maker Bean Cafe",
+          "linkUrl": "shopify:\/\/pages\/join",
+          "linkText": "<h5>full details<span> &gt;<\/span>\n<\/h5>",
+          "image": "shopify:\/\/shop_images\/testimonal-quote.png",
+          "imageAlt": ""
+        }
       }
     },
     "content_for_index": [
@@ -380,8 +380,11 @@
       "1584683343874",
       "1584683170432",
       "1584683390355",
-      "1584734418738",
-      "featured-collections"
+      "1586995720050",
+      "1586996042220",
+      "1586996910914",
+      "1586996139320",
+      "1586996520833"
     ]
   },
   "presets": {
