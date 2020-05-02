@@ -19,52 +19,9 @@
     </div>
     <div class="grid__item medium-up--one-half medium-up--text-right section-header__item">
       {% section 'collection-filters' %}
-      <h3>AAAA</h3>
+
     </div>
   </header>
-  
-  <div>
-    
-    <h3>ASDASDASDASDASDASDASD</h3>
-    
-    <div class="clearfix filter">
-  <p>Browse by tag:</p>
-  <select class="coll-filter">
-    <option value="">All</option>
-    {% for tag in collection.all_tags %} {% if current_tags contains tag %}
-    <option value="{{ tag | handle }}" selected>{{ tag }}</option>
-    {% else %}
-    <option value="{{ tag | handle }}">{{ tag }}</option>
-    {% endif %} {% endfor %}
-  </select>
-</div>
-
-<script>
-  /* Product Tag Filters - Good for any number of filters on any type of collection pages */
-  var collFilters = jQuery('.coll-filter');
-  collFilters.change(function() {
-    var newTags = [];
-    collFilters.each(function() {
-      if (jQuery(this).val()) {
-        newTags.push(jQuery(this).val());
-      }
-    });
-    if (newTags.length) {
-      var query = newTags.join('+');
-      window.location.href = jQuery('{{ 'tag' | link_to_tag: 'tag' }}').attr('href').replace('/' + 'tag', '/' + query);
-    }
-    else {
-      {% if collection.handle %}
-      window.location.href = '/collections/{{ collection.handle }}';
-      {% elsif collection.products.first.type == collection.title %}
-      window.location.href = '{{ collection.title | url_for_type }}';
-      {% elsif collection.products.first.vendor == collection.title %}
-      window.location.href = '{{ collection.title | url_for_vendor }}';
-      {% endif %}
-    }
-  });
-</script>
-  </div>
 
   <div class="grid grid--no-gutters grid--uniform">
 
@@ -138,9 +95,5 @@
   {% endif %}
 
 </div>
-
-<h2>
-  THIS IS A TEST
-</h2>
 
 {% endpaginate %}
