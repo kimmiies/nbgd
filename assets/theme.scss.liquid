@@ -7331,10 +7331,11 @@ body {
 .nbgd-questions-block {
   display: flex;
   flex-direction: column;
-  align-items: center !important;
+  align-items: flex-start;
   margin: 20px 0 60px;
   @include media-query($medium-up) {
     padding: 40px 0 20px;
+    align-items: center;
   }
 }
 
@@ -7419,3 +7420,22 @@ body {
   }
 }
 
+
+// Search Input Fix
+.nbgd-form {
+  display: flex;
+  align-items: center;
+}
+
+.nbgd-form__input {
+  background: #fff;
+  opacity: 0.5;
+
+  &[data-focus-visible-added] {
+    opacity: 1;
+  }
+}
+
+.nbgd-form__button {
+  margin: 0;
+}

@@ -1,0 +1,62 @@
+{% assign paragraphStart = section.settings.paragraph | split:"<!-- split -->"| first %}
+{% assign paragraphEnd = section.settings.paragraph | split:"<!-- split -->" | last %}
+
+<div class="section-block nbgd-support-banner box-shadow">
+  <div class="nbgd-support-banner__text">
+    <h2 class="nbgd-h2">{{ section.settings.heading }}</h2>
+    <h5 class="nbgd-h5 nbgd-h5--secondary">{{ section.settings.subheading }}</h5>
+    <p class="nbgd-support-banner__subtext">{{ paragraphStart }}
+      <a href="{{ section.settings.linkUrl }}" class="nbgd-link">
+        <span>{{ section.settings.linkText }}</span>
+      </a>
+      {{ paragraphEnd }}
+    </p>
+  </div>
+  <div class="nbgd-support-banner__button">
+    <a href="{{ section.settings.buttonUrl }}" rel="noopener noreferrer" class="btn">{{ section.settings.buttonText }}</a>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": {
+    "en": "NBGD Text Banner"
+  },
+  "settings": [{
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label":  "Subheading"
+    },
+    {
+      "type": "html",
+      "id": "paragraph",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "linkUrl",
+      "label": "Link URL"
+    },
+    {
+      "type": "text",
+      "id": "linkText",
+      "label": "Link Text"
+    },
+    {
+      "type": "url",
+      "id": "buttonUrl",
+      "label": "Button URL"
+    },
+    {
+      "type": "text",
+      "id": "buttonText",
+      "label": "Button Text"
+    }
+  ]
+}
+{% endschema %}
