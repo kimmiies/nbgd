@@ -6259,7 +6259,7 @@ body.modal--is-active {
 .image-content-info {
     flex-direction: column;
     align-items: flex-start;
-	margin: 0 0 $gutter-site 0;
+	  margin: 0 0 $gutter-site 0;
     width: 100%;
     @include media-query($medium-up) {
       align-items: center !important;
@@ -7338,10 +7338,44 @@ body {
   }
 }
 
-.nbgd-questions-block__title {
+// SECTION BLOCK - How It Works
 
+.nbgd-info {
+  margin-bottom: $gutter-site*4;
 }
 
-.nbgd-questions-block__subtext {
+.nbgd-info__title {
+  font-size: 38px;
+  margin-bottom: $gutter-site;
+}
 
+.nbgd-info-list {
+  flex-direction: column;
+  @include media-query($medium-up) {
+    flex-direction: row;
+    margin-bottom: $gutter-site;
+  }
+}
+
+.nbgd-info-list-item {
+  flex-direction: column;
+  margin-bottom: $gutter-site;
+  @include media-query($medium-up) {
+    margin-bottom: 0;
+    padding-right: $gutter-site*2;
+  }
+}
+
+.nbgd-info-list-item__image-container {
+  margin-bottom: $gutter-site;
+}
+
+.nbgd-info-list-item__image-wrapper {
+  height: 175px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.nbgd-info-list-item__image {
+  width: 150px;
 }
