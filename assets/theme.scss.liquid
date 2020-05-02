@@ -7379,3 +7379,43 @@ body {
 .nbgd-info-list-item__image {
   width: 150px;
 }
+
+
+// SECTION BLOCK - Support Banner
+
+.nbgd-support-banner {
+  background: #FFFFFF;
+  margin: 80px 0;
+  padding: $gutter-site*2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @include media-query($medium-up) {
+    margin: 120px 0;
+    padding: $gutter-site*3;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.nbgd-support-banner__text {
+  flex-basis: 100%;
+  @include media-query($medium-up) {
+    flex-basis: (4/6) * 100%;
+  }
+}
+
+.nbgd-support-banner__subtext {
+  margin-bottom: $gutter-site !important;
+  line-height: 1.6;
+}
+
+.nbgd-support-banner__button {
+  flex-basis: 100%;
+  @include media-query($medium-up) {
+    flex-basis: (2/6) * 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
