@@ -13,9 +13,19 @@
   {% endcomment %}
   {% assign current_variant = product.selected_or_first_available_variant %}
   {% assign variants_with_unit_price = product.variants | where: "unit_price_measurement" %}
-  {% assign description = product.description | split: '<!-- split -->' | first  %}
-  {% assign location = product.description | split: '<!-- split -->' | last  %}
 
+  {% comment %}
+    Splitting up the page content into different sections. Varying use cases. Might not capture all of them
+  {% endcomment %}
+  {% assign contentSections = product.description | split: '<!-- split -->' | size  %}
+
+  {%- if contentSections <= 1 -%}
+    {% assign description = product.description %}
+    {% assign location = nil %}
+  {%- else -%}
+    {% assign description = product.description | split: '<!-- split -->' | first  %}
+    {% assign location = product.description | split: '<!-- split -->' | last  %}
+  {%- endif -%}
 
   <div class="grid product-single product-gcx">
 	<div class="product-gc__meta small--text-center">
@@ -109,9 +119,12 @@
     </div>
 
 
-	<div class="grid__item rte product-single__description product-gcx__location" itemprop="description">
+    {% if location %}
+      <div class="grid__item rte product-single__description product-gcx__location" itemprop="description">
         {{ location }}
-    </div>
+      </div>
+    {% endif %}
+
   </div>
 </div>
 
