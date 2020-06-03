@@ -7109,23 +7109,15 @@ body {
     flex-direction: row;
     align-items: flex-start;
   }
+}
 
-  .left {
-    flex-basis: 100%;
-    @include media-query($medium-up) {
-      flex-basis: 50%;
-    }
-  }
-
-  .right {
-    display: none;
-    @include media-query($medium-up) {
-      flex-basis: 50%;
-      display: flex;
-      justify-content: flex-end;
-    }
+.nbgd-info-block__text {
+  flex-basis: 100%;
+  @include media-query($medium-up) {
+    flex-basis: 50%;
   }
 }
+
 
 .info {
   display: flex;
@@ -7174,43 +7166,31 @@ body {
   padding: 20px 0;
 }
 
-.testimonial--mobile {
-  background: #FFFFFF;
-  margin: 100px 0 60px;
-  padding: 20px 0;
-  width: 120%;
-  margin-left: -20%; // Shifts the container off the left side
+.nbgd-info-block__banner {
+  position: relative;
+  margin-top: $gutter-site * 2;
 
   @include media-query($medium-up) {
-    display: none;
-  }
-
-  .testimonial {
-    padding: 40px;
-    padding-left: 85px;
-    margin-left: 40px;
-  }
-
-  .testimonial-quote--top {
-    top: 0;
-    left: 0;
-    transform: translate(5%, -85%);
-  }
-
-  .testimonial-quote--bottom {
-    bottom: 0;
-    right: 0;
-    transform: translate(40%, 90%);
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0;
   }
 }
 
 .testimonial {
-  width: 325px;
   background: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 40px;
+  padding: 40px 40px 40px 35%;
+  width: 120%;
+  margin-left: -20%;
+
+  @include media-query($medium-up) {
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 40px;
+  }
 }
 
 .testimonial-quote {
@@ -7218,13 +7198,27 @@ body {
 }
 
 .testimonial-quote--top {
-  top: 10%;
-  left: -10%;
+  top: 0;
+  left: 0;
+  transform: translate(-40%, -40%);
+
+  @include media-query($medium-up) {
+    top: 10%;
+    left: -10%;
+    transform: unset;
+  }
 }
 
 .testimonial-quote--bottom {
-  bottom: 8%;
-  right: -10%;
+  bottom: 0;
+  right: 0;
+  transform: translate(-40%, 50%);
+
+  @include media-query($medium-up) {
+    bottom: 8%;
+    right: -10%;
+    transform: unset;
+  }
 
   .testimonial-quote__image {
     transform: rotate(180deg);
@@ -7360,9 +7354,9 @@ body {
 
 .nbgd-info-list-item {
   flex-direction: column;
-  margin-bottom: $gutter-site;
+  margin: $gutter-site 0;
   @include media-query($medium-up) {
-    margin-bottom: 0;
+    margin: 0;
     padding-right: $gutter-site*2;
   }
 }
@@ -7372,13 +7366,15 @@ body {
 }
 
 .nbgd-info-list-item__image-wrapper {
-  height: 175px;
   display: flex;
   align-items: flex-end;
+  @include media-query($medium-up) {
+    height: 120px; // Gives extra height to images to align them vertically
+  }
 }
 
 .nbgd-info-list-item__image {
-  width: 150px;
+  width: 100px;
 }
 
 

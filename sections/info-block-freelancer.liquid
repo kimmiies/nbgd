@@ -1,0 +1,105 @@
+<div class="section-block section-block--padding nbgd-info">
+  <h1 class="nbgd-info__title">{{ section.settings.heading }}</h1>
+  <h5 class="nbgd-h5 nbgd-h5--secondary">{{ section.settings.subheading }}</h5>
+
+  <div class="flex nbgd-info-list">
+    {% for block in section.blocks %}
+    <div class="flex nbgd-info-list-item" {{ block.shopify_attributes }}>
+      <div class="nbgd-info-list-item__image-container">
+        {% if block.settings.image != blank %}
+          <div class="nbgd-info-list-item__image-wrapper">
+            {% assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+            <img class="lazyload nbgd-info-list-item__image"
+              src="{{ block.settings.image | img_url: '300x300' }}"
+              data-src="{{ img_url }}"
+              data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+              data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+              data-sizes="auto"
+              alt="{{ block.settings.imageAlt | escape }}">
+          </div>
+        {% else %}
+          <div class="nbgd-info-list-item__image-wrapper">
+            <div class="nbgd-info-list-item__image">
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+
+
+      <div class="nbgd-info-list-item__text">
+        <h3>{{ block.settings.heading | escape }}</h3>
+        <p class="rte-setting">{{ block.settings.paragraph }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <a href="{{ section.settings.linkUrl }}" rel="noopener noreferrer" class="btn">{{ section.settings.linkText }}</a>
+</div>
+
+
+{% schema %}
+{
+  "name": "NBGD How It Works-Free",
+  "settings": [{
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Are you a small business?"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label":  "Subheading",
+      "default": "here's how it works:"
+    },
+    {
+      "type": "url",
+      "id": "linkUrl",
+      "label": "Link URL"
+    },
+    {
+      "type": "text",
+      "id": "linkText",
+      "label": "Link Text",
+      "default": "Link to Page"
+    }
+  ],
+	"blocks": [{
+		"type": "imageTextInfo",
+		"name": "Image Text Info",
+    "settings": [{
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Quick Catchy Heading"
+      },
+      {
+        "type": "text",
+        "id": "paragraph",
+        "label": "Text",
+        "default": "Join us as a small business to start selling gift cards right away. It's 100% free. No catch, just cash."
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "imageAlt",
+        "label": "Alternative text for Image"
+      }
+		]
+	}
+]
+}
+{% endschema %}
+
+
+
+{% javascript %}
+{% endjavascript %}
+
+
