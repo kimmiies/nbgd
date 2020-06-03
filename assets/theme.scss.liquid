@@ -301,7 +301,8 @@ $giftcard-code-border-radius: 4px;
 $giftcard-image-border-radius: 12px;
 
 // Forms
-$color-form: #f4f4f4;
+// $color-form: #f4f4f4;
+$color-form: #fff; // NBGD
 $color-form-text: #333;
 $input-padding-top-bottom: 13px;
 $input-padding-left-right: 15px;
@@ -7185,11 +7186,12 @@ body {
   margin-left: -20%;
 
   @include media-query($medium-up) {
-    width: 325px;
+    width:80%;
     display: flex;
     flex-direction: column;
     position: relative;
     padding: 40px;
+    height: fit-content;
   }
 }
 
@@ -7203,9 +7205,7 @@ body {
   transform: translate(-40%, -40%);
 
   @include media-query($medium-up) {
-    top: 10%;
-    left: -10%;
-    transform: unset;
+    transform: translate(-60%, 120%);
   }
 }
 
@@ -7215,9 +7215,7 @@ body {
   transform: translate(-40%, 50%);
 
   @include media-query($medium-up) {
-    bottom: 8%;
-    right: -10%;
-    transform: unset;
+    transform: translate(40%, -80%);
   }
 
   .testimonial-quote__image {
@@ -7547,4 +7545,29 @@ body {
     padding: 40px;
     flex-basis: (4/6) * 100%;
   }
+}
+
+// NBGD Section Partners List
+
+.nbgd-partners-container {
+  @include media-query($small) {
+    padding-bottom: 60px;
+  }
+}
+
+.nbgd-partners {
+  display: flex;
+  flex-direction: column;
+  @include media-query($medium-up) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.nbgd-brand-list {
+  @include flex-wrap(wrap);
+}
+
+.nbgd-brand-list__item {
+  padding: 20px;
 }

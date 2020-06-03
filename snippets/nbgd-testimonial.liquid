@@ -1,0 +1,24 @@
+<!-- /snippets/nbgd-testimonial.liquid -->
+
+<div class="nbgd-info-block__banner">
+  <div class="box-shadow testimonial">
+    <div class="testimonial-quote testimonial-quote--top">
+      <img
+        class="testimonial-quote__image lazyload"
+        src="{{ section.settings.quotationImage | img_url: '300x300' }}"
+      />
+    </div>
+    <h2 class="nbgd-h2">{{ section.settings.testimonialHeading }}</h2>
+
+    <p><b>{{ section.settings.testimonialSubheading }}</b></p>
+
+    <p>{{ section.settings.testimonialParagraph }}</p>
+
+    <div class="testimonial-quote testimonial-quote--bottom">
+      <img
+        class="testimonial-quote__image lazyload"
+        src="{{ section.settings.quotationImage | img_url: '300x300' }}"
+      />
+    </div>
+  </div>
+</div>

@@ -39,23 +39,7 @@
           <p>already sell gift cards online? <span>we’ll help drive traffic.</span></p>
         </div>
       </div>
-      <div class="nbgd-info-block__banner">
-        <div class="box-shadow testimonial">
-          <div class="testimonial-quote testimonial-quote--top">
-            <img class="testimonial-quote__image lazyload"
-              src="{{ section.settings.image | img_url: '300x300' }}"
-            />
-          </div>
-            <h2 class="nbgd-h2">{{ section.settings.testimonialHeading }}</h2>
-            <p><b>{{ section.settings.testimonialSubheading }}</b></p>
-            <p>{{ section.settings.testimonialParagraph }}</p>
-          <div class="testimonial-quote testimonial-quote--bottom">
-            <img class="testimonial-quote__image lazyload"
-              src="{{ section.settings.image | img_url: '300x300' }}"
-            />
-          </div>
-        </div>
-      </div>
+      {% include 'nbgd-testimonial' %}
     </div>
   </div>
 </div>
@@ -101,8 +85,8 @@
     }	,
     {
       "type": "image_picker",
-      "id": "image",
-      "label": "Quotes image"
+      "id": "quotationImage",
+      "label": "Quotation Image"
     },
     {
       "type": "text",

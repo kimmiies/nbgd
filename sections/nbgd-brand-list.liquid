@@ -1,0 +1,100 @@
+<div class="page-width">
+  <div class="section-block nbgd-partners-container">
+    {% if section.settings.title != blank %}
+      <div class="section-block__header text-center">
+        <h4 class="h1--mini section-block__title">{{ section.settings.title | escape }}</h4>
+      </div>
+    {% endif %}
+
+    <div class="section-block__body nbgd-partners">
+      <div class="nbgd-brand-list flex flex--grid-center medium-up--one-half">
+        {% for block in section.blocks %}
+          <div class="nbgd-brand-list__item flex__item flex__item--fixed flex flex--center-vertical one-half text-center" {{ block.shopify_attributes }}>
+            <div class="flex__item">
+              <div class="image-block">
+                {% if block.settings.image != blank %}
+                  <img src="{{ block.settings.image | img_url: '250x250' }}" alt="{{ block.settings.image.alt }}" class="image-block__image">
+                {% else %}
+                  <div class="image-block__image">
+                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      {% if section.blocks.size == 0 %}
+        {% include 'no-blocks' %}
+      {% endif %}
+
+      {% include 'nbgd-testimonial' %}
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Partner list",
+  "class": "index-section",
+  "max_blocks": 20,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "testimonialHeading",
+      "label":  "Testimonial Quote"
+    },
+    {
+      "type": "text",
+      "id": "testimonialSubheading",
+      "label":  "Testimonial Author"
+    },
+    {
+      "type": "text",
+      "id": "testimonialParagraph",
+      "label": "Testimonial Vendor"
+    },
+    {
+      "type": "image_picker",
+      "id": "quotationImage",
+      "label": "Quotation Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Partner List"
+      },
+      "category": {
+        "en": "NBGD Custom Sections"
+      },
+    "blocks": [
+      {
+        "type": "logo"
+      }
+    ]
+    }
+  ]
+}
+{% endschema %}
