@@ -224,8 +224,8 @@
           "1585180349867-1": {
             "type": "text_block",
             "settings": {
-              "title": "buy gift cards now, for later.",
-              "text": "<p>support your fave local businesses today with gift cards you can redeem later, during more social times.<\/p>",
+              "title": "lending a hand to small businesses today – may 13, 2020",
+              "text": "<p>Market your business with freelance creators donating their time.<\/p>",
               "align": "left"
             }
           },
@@ -318,35 +318,35 @@
       "1586995720050": {
         "type": "nbgd-image-text",
         "settings": {
-          "heading": "buy gift cards now, for later.",
-          "subheading": "we're looking at you, toronto.",
-          "paragraph": "Support your fave local businesses today with gift cards you can redeem later, when we can all be together again.",
-          "linkUrl": "shopify:\/\/collections",
-          "linkText": "shop gift cards",
-          "image": "shopify:\/\/shop_images\/homepage_image.png",
+          "heading": "helping small businesses now - june 3, 2020",
+          "subheading": "collab with (free)lancers",
+          "paragraph": "Market your business with talented creators donating their time and skills.",
+          "linkUrl": "shopify:\/\/pages\/join",
+          "linkText": "apply for help",
+          "image": "shopify:\/\/shop_images\/Asset_122_2x_c898df57-b0b8-4429-9512-7a204b32e577.png",
           "imageAlt": "mobile image"
         }
       },
       "1586996042220": {
         "type": "nbgd-image-banner",
         "settings": {
-          "heading": "are you a  small business?",
-          "subheading": "join us for free!",
-          "paragraph": "We’ll get you set up and accepting cash flow right into your business account(s). Also, did we mention it’s free?",
+          "heading": "calling all creators",
+          "subheading": "volunteer your skills",
+          "paragraph": "Join a community of photographers, artists, and social media experts already making a difference.",
           "linkUrl": "shopify:\/\/pages\/join",
-          "linkText": "sign me up",
-          "image": "shopify:\/\/shop_images\/banner-image-coin.png",
+          "linkText": "become a (free)lancer",
+          "image": "shopify:\/\/shop_images\/Asset_120_2x_a56bba32-4199-452f-9887-fa3115af9a2e.png",
           "imageAlt": "stack of coins"
         }
       },
       "1586996139320": {
         "type": "nbgd-text-banner",
         "settings": {
-          "heading": "<span>money.<br class=\"break--mobile\"> i wanna start selling cards.<\/span>",
+          "heading": "<span>need free marketing support?<\/span>",
           "buttonUrl": "shopify:\/\/pages\/join",
-          "buttonText": "sign up free now",
-          "linkUrl": "shopify:\/\/collections",
-          "linkText": "Shop cards instead"
+          "buttonText": "apply now",
+          "linkUrl": "",
+          "linkText": ""
         }
       },
       "1586996520833": {
@@ -360,15 +360,229 @@
       },
       "1586996910914": {
         "type": "nbgd-how-it-works",
+        "disabled": true,
         "settings": {
           "heading": "how it works.",
           "testimonialHeading": "Their positive attitude and quick help setting up and sharing info has given us a much-needed lifeline in these difficult times.",
           "testimonialSubheading": "Lorraine & Chris",
           "testimonialParagraph": "The Maker Bean Cafe",
-          "linkUrl": "shopify:\/\/pages\/join",
+          "linkUrl": "shopify:\/\/pages\/sellgiftcards",
           "linkText": "<h5>full details<span> &gt;<\/span>\n<\/h5>",
           "image": "shopify:\/\/shop_images\/testimonal-quote.png",
           "imageAlt": ""
+        }
+      },
+      "nbgd-image-banner": {
+        "type": "nbgd-image-banner",
+        "settings": {
+          "heading": "",
+          "subheading": "",
+          "paragraph": "",
+          "linkUrl": "",
+          "linkText": "",
+          "image": "",
+          "imageAlt": ""
+        }
+      },
+      "nbgd-support-banner": {
+        "type": "nbgd-support-banner",
+        "settings": {
+          "heading": "need support?",
+          "subheading": "we're here for you.",
+          "paragraph": "Email us questions &amp; feedback or schedule a quick call.<br>\n\nCheck out \n<!-- split -->\nfor more details right now.",
+          "linkUrl": "shopify:\/\/pages\/how-it-works",
+          "linkText": "how it works",
+          "buttonUrl": "shopify:\/\/pages\/reach-out",
+          "buttonText": "get in touch"
+        }
+      },
+      "info-block-seller": {
+        "type": "info-block-seller",
+        "blocks": {
+          "1588433206195": {
+            "type": "imageTextInfo",
+            "settings": {
+              "heading": "apply on our site",
+              "paragraph": "Tell us about your business using our simple online form.",
+              "image": "shopify:\/\/shop_images\/1_sign_up.png",
+              "imageAlt": ""
+            }
+          },
+          "1588433218349": {
+            "type": "imageTextInfo",
+            "settings": {
+              "heading": "get paired up",
+              "paragraph": "We’ll have a quick chat with you to define a small project & find the right creative talent who’ll  donate their skills.",
+              "image": "shopify:\/\/shop_images\/2_pair_up.png",
+              "imageAlt": ""
+            }
+          },
+          "1588433220970": {
+            "type": "imageTextInfo",
+            "settings": {
+              "heading": "work together",
+              "paragraph": "Collaborate (you + talent) on the fine details and execution of the project.",
+              "image": "shopify:\/\/shop_images\/3_make_shit.png",
+              "imageAlt": ""
+            }
+          }
+        },
+        "block_order": [
+          "1588433206195",
+          "1588433218349",
+          "1588433220970"
+        ],
+        "settings": {
+          "heading": "are you a small business?",
+          "subheading": "here's how (free)lance help works:",
+          "linkUrl": "shopify:\/\/pages\/join",
+          "linkText": "apply now"
+        }
+      },
+      "info-block-buyer": {
+        "type": "info-block-buyer",
+        "blocks": {
+          "1588433235374": {
+            "type": "imageTextInfo",
+            "settings": {
+              "heading": "apply to help",
+              "paragraph": "Introduce yourself through our quick sign-up form.",
+              "image": "shopify:\/\/shop_images\/Asset_118_2x_00d249df-4d99-4128-9a19-3cc01d06c194.png",
+              "imageAlt": ""
+            }
+          },
+          "1588433246002": {
+            "type": "imageTextInfo",
+            "settings": {
+              "heading": "get matched by fit",
+              "paragraph": "We'll put together a (brief) brief and match you based on project fit and your expertise.",
+              "image": "shopify:\/\/shop_images\/Asset_161_2x_3e6f2aab-6455-45e1-8ae0-142147267aa3.png",
+              "imageAlt": ""
+            }
+          },
+          "1588433251037": {
+            "type": "imageTextInfo",
+            "settings": {
+              "heading": "lead the execution",
+              "paragraph": "After we make the intro, we’ll take a backseat and let you own the project details.",
+              "image": "shopify:\/\/shop_images\/Asset_163_2x_cdbfe987-f2a4-42d9-8076-e740ed413ea0.png",
+              "imageAlt": ""
+            }
+          }
+        },
+        "block_order": [
+          "1588433235374",
+          "1588433246002",
+          "1588433251037"
+        ],
+        "settings": {
+          "heading": "are you a creator?",
+          "subheading": "supporting your neighbours is easy peasy, lemon squeezy:",
+          "linkUrl": "shopify:\/\/pages\/join",
+          "linkText": "apply now"
+        }
+      },
+      "product-gcx-template": {
+        "type": "product-gcx-template",
+        "settings": {}
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "display_type": "all",
+          "layout": "grid",
+          "sort": "alphabetical"
+        }
+      },
+      "1589336197421": {
+        "type": "nbgd-image-text",
+        "settings": {
+          "heading": "",
+          "subheading": "sell e-gift cards",
+          "paragraph": "Bring in additional cash flow using an easy and secure gift card app. If you already sell gift cards, we’ll happily add you to our site.",
+          "linkUrl": "shopify:\/\/pages\/join",
+          "linkText": "sign up now",
+          "image": "shopify:\/\/shop_images\/icon_1_2x_112e8573-4e0a-40e7-8ff6-bdaa50ecafe4.png",
+          "imageAlt": ""
+        }
+      },
+      "1589336811324": {
+        "type": "nbgd-image-text",
+        "settings": {
+          "heading": "",
+          "subheading": "buy gift cards to support small businesses",
+          "paragraph": "Help your neighbours get through these tough times. Get cards for yourself, friends or your crush.",
+          "linkUrl": "shopify:\/\/collections\/all",
+          "linkText": "shop gift cards",
+          "image": "shopify:\/\/shop_images\/Asset_123_2x_2749fd41-7865-4ef1-b092-1cdef36425b5.png",
+          "imageAlt": ""
+        }
+      },
+      "1589389757167": {
+        "type": "brand-list",
+        "blocks": {
+          "1589389757167-0": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/giftup-small.png"
+            }
+          },
+          "1589389757167-1": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Fuze-small.png"
+            }
+          },
+          "1589389757167-2": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Westside-small.png"
+            }
+          },
+          "1589389757167-3": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Impossible-small_673b67a8-c165-4348-9bc0-71cdc902519e.png"
+            }
+          },
+          "1589389757167-4": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Blackjet-small.png"
+            }
+          }
+        },
+        "block_order": [
+          "1589389757167-0",
+          "1589389757167-1",
+          "1589389757167-2",
+          "1589389757167-3",
+          "1589389757167-4"
+        ],
+        "settings": {
+          "title": "our partners."
+        }
+      },
+      "1591189498724": {
+        "type": "nbgd-how-it-works",
+        "settings": {
+          "heading": "helloasd",
+          "testimonialHeading": "asdasd",
+          "testimonialSubheading": "asdsadasd",
+          "testimonialParagraph": "asdsada",
+          "linkUrl": "",
+          "linkText": "asdsadada",
+          "image": "shopify:\/\/shop_images\/testimonal-quote.png",
+          "imageAlt": ""
+        }
+      },
+      "info-block-freelancer": {
+        "type": "info-block-freelancer",
+        "settings": {
+          "heading": "Are you a small business?",
+          "subheading": "here's how it works:",
+          "linkUrl": "",
+          "linkText": "Link to Page"
         }
       }
     },
@@ -380,11 +594,15 @@
       "1584683343874",
       "1584683170432",
       "1584683390355",
-      "1586995720050",
-      "1586996042220",
       "1586996910914",
+      "1586995720050",
+      "1589336197421",
+      "1586996042220",
+      "1589336811324",
       "1586996139320",
-      "1586996520833"
+      "1589389757167",
+      "1586996520833",
+      "1591189498724"
     ]
   },
   "presets": {
