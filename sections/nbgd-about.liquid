@@ -4,6 +4,11 @@
       <h1 class="nbgd-h1 nbgd-header__title">{{ section.settings.heading }}</h1>
       <h5 class="nbgd-h5 nbgd-h5--secondary">{{ section.settings.subheading }}</h5>
       <p>{{ section.settings.paragraph }}</p>
+
+      <div class="nbgd-header__btn-container">
+        <a href="{{ section.settings.linkUrlA }}" rel="noopener noreferrer" class="btn nbgd-header__btn">{{ section.settings.linkTextA }}</a>
+        <a href="{{ section.settings.linkUrlB }}" rel="noopener noreferrer" class="btn nbgd-header__btn">{{ section.settings.linkTextB }}</a>
+      </div>
     </div>
 
     <div class="nbgd-about-header__image">
@@ -15,6 +20,7 @@
         data-sizes="auto"
         alt="{{ section.settings.imageAlt | escape }}">
     </div>
+
   </div>
 
   <!-- abc, 123 -->
@@ -86,6 +92,22 @@
     "id": "teamHeading",
     "label": "Team Heading",
     "default": "Our family."
+  },{
+    "type": "url",
+    "id": "linkUrlA",
+    "label": "LinkedIn URL A"
+  },{
+    "type": "text",
+    "id": "linkTextA",
+    "label": "LinkedIn Text A"
+  },{
+    "type": "url",
+    "id": "linkUrlB",
+    "label": "LinkedIn URL B"
+  },{
+    "type": "text",
+    "id": "linkTextB",
+    "label": "LinkedIn Text B"
   }],
   "blocks": [{
     "type": "nbgd_about",
@@ -111,7 +133,7 @@
         "type": "text",
         "id": "linkText",
         "label": "Link Text"
-    }	,
+    },
     {
       "type": "image_picker",
       "id": "image",
