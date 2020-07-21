@@ -204,12 +204,14 @@
 /*============================================================================
   Grid Breakpoints and Class Names
     - Do not change the variable names
-==============================================================================*/
+=============================================================================*/
+$grid-small: 375px;
 $grid-medium: 750px;
 $grid-large: 990px;
 $grid-widescreen: 1400px;
 $grid-gutter: 20px;
 
+$xsmall-up: 'xsmall-up';
 $small: 'small';
 $medium: 'medium';
 $medium-down: 'medium-down';
@@ -224,7 +226,7 @@ $widescreen: 'widescreen';
     - Default column widths: $grid-breakpoint-has-widths: ($small, $medium-up);
     - Default is no push classes
 ==============================================================================*/
-$grid-breakpoint-has-widths: ($small, $medium-up, $large-up);
+$grid-breakpoint-has-widths: ($xsmall-up, $small, $medium-up, $large-up);
 $grid-breakpoint-has-push: ($medium-up);
 
 /*================ Color Variables ================*/
@@ -605,6 +607,7 @@ $hero-image-transition: opacity 0.8s cubic-bezier(0.44, 0.13, 0.48, 0.87);
 // The `$grid-breakpoints` list is used to build our media queries.
 // You can use these in the media-query mixin.
 $grid-breakpoints: (
+  $xsmall-up '(min-width: #{$grid-small})',
   $small '(max-width: #{$grid-medium - 1})',
   $medium '(min-width: #{$grid-medium}) and (max-width: #{$grid-large - 1})',
   $medium-down '(max-width: #{$grid-large - 1})',
@@ -7453,6 +7456,7 @@ body {
 .nbgd-about-header__text {
   order: 2;
   padding: 20px 0;
+  width: 100%;
   @include media-query($medium-up) {
     order: 1;
     padding: 0;
@@ -7471,6 +7475,33 @@ body {
     justify-content: flex-end;
     padding: 0;
 
+  }
+}
+
+.nbgd-header__btn-container {
+  display: flex;
+  flex-direction: column;
+  @include media-query($xsmall-up) {
+    justify-content: flex-start;
+    margin-right: -10px;
+    flex-direction: row;
+  }
+  @include media-query($medium-up) {
+    justify-content: unset;
+  }
+}
+
+.nbgd-header__btn {
+  margin: 10px 0;
+  @include media-query($xsmall-up) {
+    width: 45%;
+    max-width: 200px;
+    margin-right: 10px;
+    padding: 15px;
+  }
+  @include media-query($medium-up) {
+    margin: 20px 0;
+    margin-right: 20px;
   }
 }
 
