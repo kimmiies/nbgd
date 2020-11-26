@@ -133,15 +133,11 @@
             </button>
           </form>
 
-          {% comment %}
-            Cart is nil for NBGD + Gift Up. Hiding It
-
             <a href="{{ routes.cart_url }}" class="site-header__link site-header__cart">
               {% include 'icon-cart' %}
               <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
               <span class="site-header__cart-indicator {% if cart.item_count == 0 %}hide{% endif %}"></span>
             </a>
-          {% endcomment %}
         </div>
       </div>
     </div>
