@@ -1,6 +1,7 @@
 
 <div data-section-id="{{ section.id }}" data-section-type="collection-filters">
-  {%- if section.settings.product_tags_enable and collection.all_tags.size > 0 -%}
+  <!-- {%- if section.settings.product_tags_enable and collection.all_tags.size > 0 -%}
+  helllooo collection sotr
     <div class="collection-sort">
       <label for="SortTags" class="collection-sort__label">{{ 'collections.sorting.title_tags' | t }}</label>
       <select name="SortTags" id="SortTags" aria-describedby="a11y-refresh-page-message a11y-selection-message" class="collection-sort__input">
@@ -11,7 +12,7 @@
         {%- endfor -%}
       </select>
     </div>
-  {%- endif -%}
+  {%- endif -%} -->
   {%- if section.settings.product_sorting_enable -%}
     <div class="collection-sort">
       {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}

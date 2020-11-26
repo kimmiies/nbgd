@@ -7621,3 +7621,96 @@ body {
   padding: $gutter-site 0;
 }
 
+/*================ Custom NBGD Collections with Group Filtering ================*/
+// @include media-query($medium-up) {}
+// @include media-query($small) {}
+
+.nbgd-collection-container {
+  display: flex;
+}
+
+.nbgd-collection-title {
+  padding-left: $gutter-site * 2;
+}
+
+
+/*============================================================================
+  #Collection Filters
+==============================================================================*/
+$filterIconWidth: 12px;
+$innerFilterIconWidth: 6px;
+
+.sidebar {
+  padding-left: $gutter-site;
+}
+
+.advanced-filters {
+  margin-bottom: $gutter-site;
+  list-style-type: none;
+}
+
+.advanced-filters a {
+  display: block;
+  position: relative;
+  padding-left: $filterIconWidth + 8px;
+
+  &:before,
+  &:after {
+    content:'';
+    display: block;
+    position: absolute;
+  }
+
+  &:before {
+    top: 6px;
+    left: 0;
+    width: $filterIconWidth;
+    height: $filterIconWidth;
+    background-color: $color-body;
+    border: 1px solid #252525;
+  }
+
+  &:after {
+    top: 6px + ($filterIconWidth - $innerFilterIconWidth)/2;
+    left: 0 + ($filterIconWidth - $innerFilterIconWidth)/2;
+    width: $innerFilterIconWidth;
+    height: $innerFilterIconWidth;
+    background-color: transparent;
+  }
+
+  &:hover:after {
+    background-color: $color-body;
+
+  }
+}
+
+.advanced-filter.active-filter {
+  a:after {
+    background-color: #252525;
+  }
+
+  a:hover:after {
+    content: '\78';
+    top: 6px;
+    left: 0;
+    width: $filterIconWidth;
+    height: $filterIconWidth;
+    background-color: #252525;
+    font-size: $filterIconWidth - 4;
+    text-align: center;
+    color: #fff;
+    font-family: montserrat-alternates, sans-serif;
+    line-height: $filterIconWidth;
+    speak: none; // future fallback, limited in affect currently
+  }
+}
+
+.grid-border--left {
+  border-left: 1px solid $color-header-links;
+}
+
+.collection-sort__clear {
+  font-weight: $font-weight-body-bold;
+  margin: $gutter-site 0;
+  color: $color-heading;
+}
